@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__box_dimensions.o
+[PROJECT FILES]
+C:\Users\webac\Desktop\Safe and Secure Systems\Assignments\Assignment 1\2.4 Box Dimensions\box_dimensions.gpr
+20161019131316
+[BOUND OBJECT FILES]
+C:\Users\webac\Desktop\Safe and Secure Systems\Assignments\Assignment 1\2.4 Box Dimensions\obj\box_dimensions.o
+[GENERATED SOURCE FILES]
+b__box_dimensions.ads
+b__box_dimensions.adb
+b__box_dimensions.ali
+[RESULTING OPTIONS]
+-LC:\Users\webac\Desktop\Safe and Secure Systems\Assignments\Assignment 1\2.4 Box Dimensions\obj\
+-LC:\Users\webac\Desktop\Safe and Secure Systems\Assignments\Assignment 1\2.4 Box Dimensions\obj\
+-LC:/language/ada/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
+-static
+-static-libgcc
+C:/language/ada/lib/gcc/i686-pc-mingw32/4.9.4/adalib/libgnat.a
+-Wl,--stack=0x2000000

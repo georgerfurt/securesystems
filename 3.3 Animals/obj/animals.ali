@@ -1,0 +1,62 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U animals%b		animals.adb		87d85ae2 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D animals.adb		20161020184702 bfb5af36 animals%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 8|1r6 2r5
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 2r9
+166U14*New_Line 8|12s4 14s4 16s4 18s4 20s4
+206U14*Get 8|37s10
+242U14*Put 8|11s4 13s4 15s4 17s4 19s4 26s13 28s13 30s13 32s13 60s16 63s16
+. 68s15 71s16
+X 8 animals.adb
+4U11*Animals 4b11 79l5 79t12
+5E9 State 5e49 8r25
+5n19 Start{5E9} 8r37 25r15 48r15
+5n26 Ready{5E9} 27r15 50r33 52r15
+5n33 Household{5E9} 29r15 54r33 58r15
+5n44 Wild{5E9} 31r15 56r33 66r15
+7e4 Answer{character} 37m14 38r13 38r29 41r16 41r32
+8e4 Current_State{5E9} 24r12 47r12 50m16 54m16 56m16
+9b4 Yes{boolean} 39m13 42m13 49r16 53r16 59r16 67r16
+22l4 Outer 78l13 78e18
+35l7 Inner 40r18 43r18 45l16 45e21
+
