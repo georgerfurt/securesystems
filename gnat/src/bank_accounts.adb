@@ -1,38 +1,32 @@
 package body Bank_Accounts is
 
+   -- Returns the current Balance from Account.
    function Get_Balance (Account : in Account_Type) return Cents_Type is
    begin
-      -- Returns the current Balance from Account.
-
       return Account.Balance;
-
    end Get_Balance;
 
+   -- Deposits Amount at the given Account.
    procedure Deposit(Account: in out Account_Type; Amount: Cents_Type) is
    begin
-      -- Deposits Amount at the given Account.
-      -- not negative
-
       Account.Balance := Account.Balance + Amount;
-
    end Deposit;
 
+   -- Withdraws Amount from the given Account.
    procedure Withdraw(Account: in out Account_Type; Amount: Cents_Type) is
    begin
       Account.Balance := Account.Balance - Amount;
    end Withdraw;
 
+   -- Transfers Amount from Account From to Account To.
    procedure Transfer(From: in out Account_Type;
                       To: in out Account_Type;
                       Amount: in Cents_Type) is
    begin
-      -- Transfers Amount from Account From to Account To.
-
       From.Balance := From.Balance - Amount;
       To.Balance := To.Balance + Amount;
-
    end;
 
 end Bank_Accounts;
 
--- CHECK OVERFLOW
+

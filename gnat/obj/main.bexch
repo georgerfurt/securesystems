@@ -6,6 +6,7 @@ E:\Workspace\Git\securesystems\gnat\assignment2.gpr
 [BOUND OBJECT FILES]
 E:\Workspace\Git\securesystems\gnat\obj\cards.o
 E:\Workspace\Git\securesystems\gnat\obj\bank_accounts.o
+E:\Workspace\Git\securesystems\gnat\obj\vectors.o
 E:\Workspace\Git\securesystems\gnat\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
