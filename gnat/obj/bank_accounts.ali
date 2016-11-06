@@ -1,0 +1,50 @@
+V "GNAT Lib v2016"
+A -gnatA
+A -gnatwa
+A -gnatwe
+A -gnat12
+A -gnato
+A -gnata
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bank_accounts%b	bank_accounts.adb	fb893e70 NE OO PK
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U bank_accounts%s	bank_accounts.ads	78eaff9c EE NE OO PK
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D bank_accounts.ads	20161106174408 78eaff9c bank_accounts%s
+D bank_accounts.adb	20161106172236 8363c1ec bank_accounts%b
+D system.ads		20160516092930 2da59038 system%s
+D s-assert.ads		20160516092930 cd8d2c94 system.assertions%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+X 3 bank_accounts.ads
+1K9*Bank_Accounts 32l5 32e18 4|1b14 36l5 36t18
+2I12*Cents_Type{natural} 6r16 10r55 13r60 18r61 26r34 4|3r60 11r60 20r61
+. 27r34
+5R9*Account_Type 7e14 10r34 13r38 18r39 24r36 25r34 4|3r39 11r38 20r39 25r36
+. 26r34
+6i7*Balance{2I12} 14r51 19r37 27r33 29r46 4|7r22 16m15 16r34 22m15 22r34
+. 31m12 31r28 32m10 32r24
+10V13*Get_Balance{2I12} 10>25 4|3b13 9l8 9t19
+10r25 Account{5R9} 4|3b26 7r14
+13U14*Deposit 13=22 13>52 4|11b14 18l8 18t15
+13r22 Account{5R9} 14r43 4|11b22 16m7 16r26
+13i52 Amount{2I12} 14r19 4|11b52 16r44
+18U14*Withdraw 18=23 18>53 4|20b14 23l8 23t16
+18r23 Account{5R9} 19r29 4|20b23 22m7 22r26
+18i53 Amount{2I12} 19r19 4|20b53 22r44
+24U14*Transfer 24=23 25=23 26>23 4|25b14 34t7
+24r23 From{5R9} 27r28 4|25b23 31m7 31r23
+25r23 To{5R9} 29r43 4|26b23 32m7 32r21
+26i23 Amount{2I12} 27r19 29r19 4|27b23 31r38 32r34
+

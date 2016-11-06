@@ -1,0 +1,120 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnatA
+A -gnatwa
+A -gnatwe
+A -gnat12
+A -gnato
+A -mtune=generic
+A -march=pentium4
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U cards%b		cards.adb		3ae00d2c NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
+D a-nudira.ads		20160516092928 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20160516092928 72908cdb ada.numerics.discrete_random%b
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D cards.adb		20161106144824 7368a517 cards%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca3.ads		20160516092932 0b705ca5 system.concat_3%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-imenne.ads		20160516092928 614c06c0 system.img_enum_new%s
+D s-imguns.ads		20160516092928 9ff43cf7 system.img_uns%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-rannum.ads		20160516092928 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20160516092932 20ba1217 system.random_numbers%b
+D s-ransee.ads		20160516092932 01a57b33 system.random_seed%s
+D s-secsta.ads		20160516092930 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-valuns.ads		20160516092932 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 11|2r6 2r36 3r6 11r31 12r32
+X 4 a-numeri.ads
+16K13*Numerics 32e17 11|2r10 11r35 12r36
+X 5 a-nudira.ads
+44k22*Discrete_Random 75e33 11|2w19 11r44 12r45
+50R9 Generator<22|63R9> 11|14r44[11] 15r45[12]
+52V13 Random{11|7E9} 11|25s26[11] 26s28[12] 30s29[11] 31s31[12] 40s29[11]
+. 41s31[12]
+55U14 Reset<22|100p14> 11|21s16[11] 22s17[12]
+X 6 a-nudira.adb
+53V16 Random[22|83]{11|7E9} 23|392b13[11|11]
+X 9 a-textio.ads
+49K13*Text_IO 471e16 11|2w40 3r10
+263U14*Put_Line 11|50s4 51s4 52s4
+X 11 cards.adb
+5U11*Cards 5b11 54l5 54t10
+7E9 Card_Suit 7e54 11r61 17r32
+7n23 Club{7E9}
+7n29 Diamonds{7E9}
+7n39 Hearts{7E9}
+7n47 Spades{7E9}
+8E9 Card_Value 9e47 12r62 18r32
+8n24 Ace{8E9}
+8n29 Two{8E9}
+8n34 Three{8E9}
+8n41 Four{8E9}
+8n47 Fife{8E9}
+8n53 Six{8E9}
+8n58 Seven{8E9}
+8n65 Eight{8E9}
+8n72 Nine{8E9}
+9n24 Ten{8E9}
+9n29 Jack{8E9}
+9n35 Queen{8E9}
+9n42 King{8E9}
+11K12 Random_Suit[5|44] 14r32 21r4 25r14 30r17 40r17
+12K12 Random_Value[5|44] 15r32 22r4 26r15 31r18 41r18
+14r4 Suit_Gen{5|50R9[11]} 21r23 25r34 30r37 40r37
+15r4 Value_Gen{5|50R9[12]} 22r24 26r36 31r39 41r39
+17e4 Suit_A{7E9} 25m4 33r20 43r21 50r14
+17e12 Suit_B{7E9} 30m7 33r10 44r24 51r14
+17e20 Suit_C{7E9} 40m7 43r11 44r14 52r14
+18e4 Value_A{8E9} 26m4 33r41 43r42 44r45 50r35
+18e13 Value_B{8E9} 31m7 33r30 51r35
+18e22 Value_C{8E9} 41m7 43r31 44r34 52r35
+X 12 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 22 s-rannum.ads
+75V13*Random{12|74M9} 23|221i21
+76V13*Random{12|77M9} 23|221i21
+

@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\card.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 5" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\graph.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 9" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 9" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 7" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 70" line=" 11" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 47" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 47" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 52" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 22" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 16" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 65" line=" 10" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 10" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_account.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 34" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_account.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 34" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_account.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_account.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 36" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_account.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 34" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 36" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 36" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 34" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 32" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 38" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 8" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 12" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 9" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 12" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 53" line=" 18" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 13" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 19" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 18" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 34" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 19" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 36" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 16" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 75" line=" 20" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 18" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 20" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 20" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 19" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 18" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 17" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 20" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 18" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 4" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 14" line=" 27" >
+      <vfs_project>E:\Workspace\Git\securesystems\gnat\assignment2.gpr</vfs_project>
+      <vfs_file>E:\Workspace\Git\securesystems\gnat\src\bank_accounts.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
