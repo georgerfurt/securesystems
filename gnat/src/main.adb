@@ -5,9 +5,10 @@
 -- Georg Erfurt  111653
 -- Aaron Solbach 112201
 
+with Card;
+
 procedure Main is
 
 begin
-   --  Insert code here.
-   null;
+   Card;
 end Main;
