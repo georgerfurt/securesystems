@@ -1,4 +1,5 @@
 package Bank_Accounts is
+
    subtype Cents_Type is Natural;
    --  changed from Integer to Natural: replaces checking for positive values
 
