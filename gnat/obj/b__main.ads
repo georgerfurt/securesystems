@@ -35,7 +35,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#169feee4#;
+   u00001 : constant Version_32 := 16#816dce3e#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#b6df930e#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -317,9 +317,9 @@ package ada_main is
    pragma Export (C, u00140, "system__os_primitivesB");
    u00141 : constant Version_32 := 16#49a73bd1#;
    pragma Export (C, u00141, "system__os_primitivesS");
-   u00142 : constant Version_32 := 16#5047f06a#;
+   u00142 : constant Version_32 := 16#f7c863ab#;
    pragma Export (C, u00142, "vectorsB");
-   u00143 : constant Version_32 := 16#293f8571#;
+   u00143 : constant Version_32 := 16#4a32b639#;
    pragma Export (C, u00143, "vectorsS");
    u00144 : constant Version_32 := 16#3e0cf54d#;
    pragma Export (C, u00144, "ada__numerics__auxB");

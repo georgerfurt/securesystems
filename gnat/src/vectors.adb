@@ -1,7 +1,5 @@
 with Ada.Text_IO,
-     Ada.Float_Text_IO,
-     Ada.Numerics.Generic_Elementary_Functions;
-
+     Ada.Float_Text_IO;
 package body Vectors is
 
    -- Adds two vectors dimension-wise.
