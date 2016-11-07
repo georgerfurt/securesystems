@@ -35,7 +35,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#ae482eec#;
+   u00001 : constant Version_32 := 16#169feee4#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#b6df930e#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -277,9 +277,9 @@ package ada_main is
    pragma Export (C, u00120, "system__val_lliB");
    u00121 : constant Version_32 := 16#590ccc07#;
    pragma Export (C, u00121, "system__val_lliS");
-   u00122 : constant Version_32 := 16#bc49925f#;
+   u00122 : constant Version_32 := 16#25cc216c#;
    pragma Export (C, u00122, "bank_accountsB");
-   u00123 : constant Version_32 := 16#3f2a53b3#;
+   u00123 : constant Version_32 := 16#a6afe080#;
    pragma Export (C, u00123, "bank_accountsS");
    u00124 : constant Version_32 := 16#52f1910f#;
    pragma Export (C, u00124, "system__assertionsB");
@@ -317,9 +317,9 @@ package ada_main is
    pragma Export (C, u00140, "system__os_primitivesB");
    u00141 : constant Version_32 := 16#49a73bd1#;
    pragma Export (C, u00141, "system__os_primitivesS");
-   u00142 : constant Version_32 := 16#037be9f7#;
+   u00142 : constant Version_32 := 16#5047f06a#;
    pragma Export (C, u00142, "vectorsB");
-   u00143 : constant Version_32 := 16#7a039cec#;
+   u00143 : constant Version_32 := 16#293f8571#;
    pragma Export (C, u00143, "vectorsS");
    u00144 : constant Version_32 := 16#3e0cf54d#;
    pragma Export (C, u00144, "ada__numerics__auxB");
