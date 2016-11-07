@@ -5,7 +5,7 @@ project Assignment2 is
    for Main use ("main.adb");
 
    package Compiler is
-      for Default_Switches ("ada") use ("-gnatwae", "-gnat12", "-gnato", "-gnata");
+      for Default_Switches ("ada") use ("-gnatwae", "-gnat12", "-gnato", "-gnata", "-gnatyaihfeCcBbAklnOprsStuxI");
    end Compiler;
 
 end Assignment2;

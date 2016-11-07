@@ -1,17 +1,37 @@
 V "GNAT Lib v2016"
-A -mmacosx-version-min=10.11.0
 A -gnatA
 A -gnatwa
 A -gnatwe
 A -gnat12
 A -gnato
 A -gnata
-A -mtune=core2
-A -fPIC
+A -gnatya
+A -gnatyi
+A -gnatyh
+A -gnatyf
+A -gnatye
+A -gnatyC
+A -gnatyc
+A -gnatyB
+A -gnatyb
+A -gnatyA
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatys
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatyI
+A -mtune=generic
+A -march=pentium4
 P ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_FLOATING_POINT
@@ -21,7 +41,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vectors%b		vectors.adb		5047f06a NE OO PK
+U vectors%b		vectors.adb		80d4a424 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
@@ -33,108 +53,113 @@ W system.assertions%s	s-assert.adb		s-assert.ali
 W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
 W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
 
-U vectors%s		vectors.ads		293f8571 EE NE OO PK
+U vectors%s		vectors.ads		26d9b26f EE NE OO PK
 W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
-D a-flteio.ads		20160516092929 e18a47a0 ada.float_text_io%s
-D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
+D a-flteio.ads		20160516092928 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
 D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
-D a-numaux.ads		20160516092931 243fe0b7 ada.numerics.aux%s
-D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
-D a-ngelfu.adb		20160516092929 5e96a931 ada.numerics.generic_elementary_functions%b
-D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-numaux.ads		20160516092930 243fe0b7 ada.numerics.aux%s
+D a-ngelfu.ads		20160516092930 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20160516092928 5e96a931 ada.numerics.generic_elementary_functions%b
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
 D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
-D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
-D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D a-tiflio.ads		20160516092926 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
-D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
-D system.ads		20160516092931 c3282aa7 system%s
-D s-assert.ads		20160516092931 cd8d2c94 system.assertions%s
-D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
-D s-exctab.ads		20160516092931 54135002 system.exception_table%s
-D s-exnllf.ads		20160516092931 bc7ebbdc system.exn_llf%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-assert.ads		20160516092930 cd8d2c94 system.assertions%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-exnllf.ads		20160516092930 bc7ebbdc system.exn_llf%s
 D s-fatflt.ads		20160516092930 11beb392 system.fat_flt%s
-D s-fatgen.ads		20160516092933 49cbaf86 system.fat_gen%s
-D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
+D s-fatgen.ads		20160516092932 49cbaf86 system.fat_gen%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
-D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
 D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
-D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
 D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
-D vectors.ads		20161107074933 293f8571 vectors%s
-D vectors.adb		20161107000444 18620c29 vectors%b
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D vectors.ads		20161107104444 26d9b26f vectors%s
+D vectors.adb		20161107103910 c7176f79 vectors%b
 X 1 ada.ads
-16K9*Ada 19e8 33|1r6 2r6 3r6 88r27 96r7 97r7 98r7 99r7 100r7 101r7 102r7
+16K9*Ada 19e8 33|1r6 2r6 3r6 89r27 97r7 98r7 99r7 100r7 101r7 102r7 103r7
 X 3 a-flteio.ads
-20K13*Float_Text_IO[12|46] 33|2w10 97r11 99r11 101r11
+20K13*Float_Text_IO[12|46] 33|2w10 98r11 100r11 102r11
 X 5 a-numeri.ads
-16K13*Numerics 32e17 33|3r10 88r31
+16K13*Numerics 32e17 33|3r10 89r31
 X 7 a-ngelfu.ads
-39k22*Generic_Elementary_Functions 170e46 33|3w19 88r40
-42V13 Sqrt{float} 33|90s19[88]
+39k22*Generic_Elementary_Functions 170e46 33|3w19 89r40
+42V13 Sqrt{float} 33|91s19[89]
 X 11 a-textio.ads
-49K13*Text_IO 471e16 33|1w10 96r11 98r11 100r11 102r11
-242U14*Put 33|96s19 98s19 100s19 102s19
+49K13*Text_IO 471e16 33|1w10 97r11 99r11 101r11 103r11
+73I12*Field{integer}
+242U14*Put 33|97s19 99s19 101s19 103s19
 X 12 a-tiflio.ads
-68U14*Put 33|97s25[3|20] 99s25[3|20] 101s25[3|20]
+68U14*Put 33|98s25[3|20] 100s25[3|20] 102s25[3|20]
+69f7 Item{float} 33|98r30[3|20] 100r30[3|20] 102r30[3|20]
+70i7 Fore{11|73I12} 33|98r46[3|20] 100r46[3|20] 102r46[3|20]
+71i7 Aft{11|73I12} 33|98r57[3|20] 100r57[3|20] 102r57[3|20]
+72i7 Exp{11|73I12} 33|98r67[3|20] 100r67[3|20] 102r67[3|20]
 X 32 vectors.ads
-1K9*Vectors 55l5 55e12 33|5b14 105l5 105t12
-2R10*Vector 6e15 8r23 8r38 8r53 13r24 13r39 13r54 18r24 18r53 23r24 23r39
-. 26r24 26r39 35r35 35r50 42r34 42r49 42r64 47r29 47r44 50r39 53r25 33|8r24
-. 8r39 8r54 9r13 19r24 19r39 19r54 20r20 30r24 30r53 31r17 41r24 41r39 48r23
-. 48r38 60r34 60r49 70r34 70r49 70r64 71r17 81r29 81r44 87r39 94r25
-3f9*X{float} 9r32 9r41 9r51 14r33 14r42 14r52 19r33 19r42 24r40 24r50 27r31
-. 27r41 43r42 44r57 44r66 45r47 45r76 33|11m11 11r21 11r31 22m18 22r28 22r38
-. 33m15 33r25 43r19 43r29 50r16 50r26 73m15 74r35 74r44 75r25 75r54 90r30
-. 90r39 97r35 99r35
-4f9*Y{float} 10r23 10r32 10r42 15r24 15r33 15r43 20r24 20r33 24r59 24r69
-. 28r33 28r43 29r43 43r51 43r80 44r38 45r57 45r66 33|12m11 12r21 12r31 23m18
-. 23r28 23r38 34m15 34r25 43r38 43r48 51r20 51r30 52r30 73r25 73r54 74m15
-. 75r35 75r44 90r48 90r57
-5f9*Z{float} 11r23 11r32 11r42 16r24 16r33 16r43 21r24 21r33 24r78 24r88
-. 29r33 43r61 43r70 44r47 44r76 45r38 33|13m11 13r21 13r31 24m18 24r28 24r38
-. 35m15 35r25 43r57 43r67 52r20 73r35 73r44 74r25 74r54 75m15 90r66 90r75
-. 101r35
-8V14*"+"{2R10} 8>17 8>31 33|8b14 16t7
-8r17 Left{2R10} 9r36 10r27 11r27 33|8b18 11r16 12r16 13r16
-8r31 Right{2R10} 9r45 10r36 11r36 33|8b32 11r25 12r25 13r25
-13V15*"-"{2R10} 13>18 13>32 33|19b14 27t7 83s40
-13r18 Left{2R10} 14r37 15r28 16r28 33|19b18 22r23 23r23 24r23
-13r32 Right{2R10} 14r46 15r37 16r37 33|19b32 22r32 23r32 24r32
-18V15*"*"{2R10} 18>18 18>32 33|30b14 38t7
-18r18 Left{2R10} 19r37 20r28 21r28 33|30b18 33r20 34r20 35r20
-18f32 Right{float} 19r46 20r37 21r37 33|30b32 33r29 34r29 35r29
-23V15*"*"{float} 23>18 23>32 36s31 33|41b14 44t7 62s16
-23r18 Left{2R10} 24r35 24r54 24r73 33|41b18 43r14 43r33 43r52
-23r32 Right{2R10} 24r44 24r63 24r82 33|41b32 43r23 43r42 43r61
-26V15*"="{boolean} 26>18 26>32 33|48b14 57t7
-26r18 Left{2R10} 27r26 28r28 29r28 33|48b17 50r11 51r15 52r15
-26r32 Right{2R10} 27r35 28r37 29r37 33|48b31 50r20 51r24 52r24
-35V14*Are_Orthogonal{boolean} 35>29 35>43 37r25 39r25 33|60b13 67t7
-35r29 Left{2R10} 36r26 33|60b28 62r11
-35r43 Right{2R10} 36r33 33|60b42 62r18
-42V14*Cross_Product{2R10} 42>28 42>42 43r21 44r17 45r17 33|70b13 78t7
-42r28 Left{2R10} 43r46 43r65 44r42 44r61 45r42 45r61 33|70b28 73r20 73r39
-. 74r20 74r39 75r20 75r39
-42r42 Right{2R10} 43r55 43r74 44r51 44r70 45r51 45r70 33|70b42 73r29 73r48
-. 74r29 74r48 75r29 75r48
-47V14*Distance{float} 47>23 47>37 33|81b13 84t7
-47r23 Left{2R10} 33|81b23 83r42
-47r37 Right{2R10} 33|81b37 83r34
-50V14*Distance_To_Origin{float} 50>33 33|83s14 87b13 91t7
-50r33 Item{2R10} 33|87b33 90r25 90r34 90r43 90r52 90r61 90r70
-53U15*Put 53>19 33|94b14 103t7
-53r19 Item{2R10} 33|94b19 97r30 99r30 101r30
+1K9*Vectors 61l5 61e12 33|5b14 106l5 106t12
+2R9*Vector 6e14 9r25 9r41 9r56 16r25 16r41 16r56 22r25 22r55 28r25 28r41
+. 32r36 32r52 41r36 41r52 47r35 47r51 47r66 53r30 53r46 56r40 59r26 33|8r25
+. 8r41 8r56 9r13 19r25 19r41 19r56 20r20 30r25 30r55 31r17 41r25 41r41 48r36
+. 48r52 61r36 61r52 71r35 71r51 71r66 72r17 82r30 82r46 88r40 95r26
+3f7*X{float} 11r19 11r28 11r38 18r19 18r28 18r38 24r19 24r28 30r26 30r36
+. 34r17 34r27 49r29 50r57 50r66 51r47 51r76 33|11m11 11r21 11r31 22m18 22r28
+. 22r38 33m15 33r25 43r19 43r29 50r15 50r25 74m15 75r35 75r44 76r25 76r54
+. 91r30 91r39 98r43
+4f7*Y{float} 12r28 12r37 12r47 19r28 19r37 19r47 25r28 25r37 30r45 30r55
+. 35r23 35r33 36r33 49r38 49r67 50r38 51r57 51r66 33|12m11 12r21 12r31 23m18
+. 23r28 23r38 34m15 34r25 43r38 43r48 51r23 51r33 52r33 74r25 74r54 75m15
+. 76r35 76r44 91r48 91r57 100r43
+5f7*Z{float} 13r28 13r37 13r47 20r28 20r37 20r47 26r28 26r37 30r64 30r74
+. 36r23 49r48 49r57 50r47 50r76 51r38 33|13m11 13r21 13r31 24m18 24r28 24r38
+. 35m15 35r25 43r57 43r67 52r23 74r35 74r44 75r25 75r54 76m15 91r66 91r75
+. 102r43
+9V14*"+"{2R9} 9>18 9>33 33|8b14 16l9 16t11
+9r18 Left{2R9} 11r23 12r32 13r32 33|8b18 11r16 12r16 13r16
+9r33 Right{2R9} 11r32 12r41 13r41 33|8b33 11r25 12r25 13r25
+16V14*"-"{2R9} 16>18 16>33 33|19b14 27l9 27t11 84s40
+16r18 Left{2R9} 18r23 19r32 20r32 33|19b18 22r23 23r23 24r23
+16r33 Right{2R9} 18r32 19r41 20r41 33|19b33 22r32 23r32 24r32
+22V14*"*"{2R9} 22>18 22>33 33|30b14 38l9 38t11
+22r18 Left{2R9} 24r23 25r32 26r32 33|30b18 33r20 34r20 35r20
+22f33 Right{float} 24r32 25r41 26r41 33|30b33 33r29 34r29 35r29
+28V14*"*"{float} 28>18 28>33 43s16 33|41b14 44l9 44t11 63s15
+28r18 Left{2R9} 30r21 30r40 30r59 33|41b18 43r14 43r33 43r52
+28r33 Right{2R9} 30r30 30r49 30r68 33|41b33 43r23 43r42 43r61
+32V25*"="{boolean} 32>29 32>44 33|48b25 58l9 58t11
+32r29 Left{2R9} 34r12 35r18 36r18 33|48b29 50r10 51r18 52r18
+32r44 Right{2R9} 34r21 35r27 36r27 33|48b44 50r19 51r27 52r27
+41V13*Are_Orthogonal{boolean} 41>29 41>44 43r35 44r13 33|61b13 68l8 68t22
+41r29 Left{2R9} 43r11 33|61b29 63r10
+41r44 Right{2R9} 43r18 33|61b44 63r17
+47V13*Cross_Product{2R9} 47>28 47>43 49r8 50r17 51r17 33|71b13 79l8 79t21
+47r28 Left{2R9} 49r33 49r52 50r42 50r61 51r42 51r61 33|71b28 74r20 74r39
+. 75r20 75r39 76r20 76r39
+47r43 Right{2R9} 49r42 49r61 50r51 50r70 51r51 51r70 33|71b43 74r29 74r48
+. 75r29 75r48 76r29 76r48
+53V13*Distance{float} 53>23 53>38 33|82b13 85l8 85t16
+53r23 Left{2R9} 33|82b23 84r42
+53r38 Right{2R9} 33|82b38 84r34
+56V13*Distance_To_Origin{float} 56>33 33|84s14 88b13 92l8 92t26
+56r33 Item{2R9} 33|88b33 91r25 91r34 91r43 91r52 91r61 91r70
+59U14*Put 59>19 33|95b14 104l8 104t11
+59r19 Item{2R9} 33|95b19 98r38 100r38 102r38
 X 33 vectors.adb
-9r7 Sum{32|2R10} 11m7 12m7 13m7 15r14
-20r7 Difference{32|2R10} 22m7 23m7 24m7 26r14
-31r7 Product{32|2R10} 33m7 34m7 35m7 37r14
-71r7 Product{32|2R10} 73m7 74m7 75m7 77r14
-88K15 Math[7|39] 90r14
+9r7 Sum{32|2R9} 11m7 12m7 13m7 15r14
+20r7 Difference{32|2R9} 22m7 23m7 24m7 26r14
+31r7 Product{32|2R9} 33m7 34m7 35m7 37r14
+72r7 Product{32|2R9} 74m7 75m7 76m7 78r14
+89K15 Math[7|39] 91r14
 
