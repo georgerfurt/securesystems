@@ -7,32 +7,26 @@ with Ada.Exceptions;
 
 package body ada_main is
 
-   E104 : Short_Integer; pragma Import (Ada, E104, "system__os_lib_E");
+   E079 : Short_Integer; pragma Import (Ada, E079, "system__os_lib_E");
    E013 : Short_Integer; pragma Import (Ada, E013, "system__soft_links_E");
    E023 : Short_Integer; pragma Import (Ada, E023, "system__exception_table_E");
-   E089 : Short_Integer; pragma Import (Ada, E089, "ada__io_exceptions_E");
-   E146 : Short_Integer; pragma Import (Ada, E146, "ada__numerics_E");
-   E046 : Short_Integer; pragma Import (Ada, E046, "ada__strings_E");
-   E048 : Short_Integer; pragma Import (Ada, E048, "ada__strings__maps_E");
-   E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings__maps__constants_E");
-   E091 : Short_Integer; pragma Import (Ada, E091, "ada__tags_E");
-   E088 : Short_Integer; pragma Import (Ada, E088, "ada__streams_E");
-   E063 : Short_Integer; pragma Import (Ada, E063, "interfaces__c_E");
+   E054 : Short_Integer; pragma Import (Ada, E054, "ada__io_exceptions_E");
+   E127 : Short_Integer; pragma Import (Ada, E127, "ada__numerics_E");
+   E056 : Short_Integer; pragma Import (Ada, E056, "ada__tags_E");
+   E053 : Short_Integer; pragma Import (Ada, E053, "ada__streams_E");
+   E077 : Short_Integer; pragma Import (Ada, E077, "interfaces__c_E");
    E025 : Short_Integer; pragma Import (Ada, E025, "system__exceptions_E");
-   E107 : Short_Integer; pragma Import (Ada, E107, "system__file_control_block_E");
-   E099 : Short_Integer; pragma Import (Ada, E099, "system__file_io_E");
-   E102 : Short_Integer; pragma Import (Ada, E102, "system__finalization_root_E");
-   E100 : Short_Integer; pragma Import (Ada, E100, "ada__finalization_E");
-   E158 : Short_Integer; pragma Import (Ada, E158, "ada__calendar_E");
-   E144 : Short_Integer; pragma Import (Ada, E144, "system__assertions_E");
-   E061 : Short_Integer; pragma Import (Ada, E061, "system__object_reader_E");
-   E041 : Short_Integer; pragma Import (Ada, E041, "system__dwarf_lines_E");
-   E156 : Short_Integer; pragma Import (Ada, E156, "system__random_seed_E");
+   E082 : Short_Integer; pragma Import (Ada, E082, "system__file_control_block_E");
+   E072 : Short_Integer; pragma Import (Ada, E072, "system__file_io_E");
+   E075 : Short_Integer; pragma Import (Ada, E075, "system__finalization_root_E");
+   E073 : Short_Integer; pragma Import (Ada, E073, "ada__finalization_E");
+   E139 : Short_Integer; pragma Import (Ada, E139, "ada__calendar_E");
+   E125 : Short_Integer; pragma Import (Ada, E125, "system__assertions_E");
+   E137 : Short_Integer; pragma Import (Ada, E137, "system__random_seed_E");
    E017 : Short_Integer; pragma Import (Ada, E017, "system__secondary_stack_E");
-   E036 : Short_Integer; pragma Import (Ada, E036, "system__traceback__symbolic_E");
-   E086 : Short_Integer; pragma Import (Ada, E086, "ada__text_io_E");
-   E142 : Short_Integer; pragma Import (Ada, E142, "bank_accounts_E");
-   E165 : Short_Integer; pragma Import (Ada, E165, "vectors_E");
+   E051 : Short_Integer; pragma Import (Ada, E051, "ada__text_io_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "bank_accounts_E");
+   E143 : Short_Integer; pragma Import (Ada, E143, "vectors_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -41,7 +35,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E086 := E086 - 1;
+      E051 := E051 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -52,7 +46,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E099 := E099 - 1;
+         E072 := E072 - 1;
          F2;
       end;
       declare
@@ -150,56 +144,44 @@ package body ada_main is
       System.Exception_Table'Elab_Body;
       E023 := E023 + 1;
       Ada.Io_Exceptions'Elab_Spec;
-      E089 := E089 + 1;
+      E054 := E054 + 1;
       Ada.Numerics'Elab_Spec;
-      E146 := E146 + 1;
-      Ada.Strings'Elab_Spec;
-      E046 := E046 + 1;
-      Ada.Strings.Maps'Elab_Spec;
-      Ada.Strings.Maps.Constants'Elab_Spec;
-      E052 := E052 + 1;
+      E127 := E127 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Streams'Elab_Spec;
-      E088 := E088 + 1;
+      E053 := E053 + 1;
       Interfaces.C'Elab_Spec;
       System.Exceptions'Elab_Spec;
       E025 := E025 + 1;
       System.File_Control_Block'Elab_Spec;
-      E107 := E107 + 1;
+      E082 := E082 + 1;
       System.Finalization_Root'Elab_Spec;
-      E102 := E102 + 1;
+      E075 := E075 + 1;
       Ada.Finalization'Elab_Spec;
-      E100 := E100 + 1;
+      E073 := E073 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
-      E158 := E158 + 1;
+      E139 := E139 + 1;
       System.Assertions'Elab_Spec;
-      E144 := E144 + 1;
-      System.Object_Reader'Elab_Spec;
-      System.Dwarf_Lines'Elab_Spec;
+      E125 := E125 + 1;
       System.Random_Seed'Elab_Body;
-      E156 := E156 + 1;
+      E137 := E137 + 1;
       System.File_Io'Elab_Body;
-      E099 := E099 + 1;
-      E063 := E063 + 1;
+      E072 := E072 + 1;
+      E077 := E077 + 1;
       Ada.Tags'Elab_Body;
-      E091 := E091 + 1;
-      E048 := E048 + 1;
+      E056 := E056 + 1;
       System.Soft_Links'Elab_Body;
       E013 := E013 + 1;
       System.Os_Lib'Elab_Body;
-      E104 := E104 + 1;
+      E079 := E079 + 1;
       System.Secondary_Stack'Elab_Body;
       E017 := E017 + 1;
-      E041 := E041 + 1;
-      E061 := E061 + 1;
-      System.Traceback.Symbolic'Elab_Body;
-      E036 := E036 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E086 := E086 + 1;
-      E142 := E142 + 1;
-      E165 := E165 + 1;
+      E051 := E051 + 1;
+      E123 := E123 + 1;
+      E143 := E143 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -235,16 +217,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   E:\Workspace\Git\securesystems\gnat\obj\cards.o
-   --   E:\Workspace\Git\securesystems\gnat\obj\bank_accounts.o
-   --   E:\Workspace\Git\securesystems\gnat\obj\vectors.o
-   --   E:\Workspace\Git\securesystems\gnat\obj\main.o
-   --   -LE:\Workspace\Git\securesystems\gnat\obj\
-   --   -LE:\Workspace\Git\securesystems\gnat\obj\
-   --   -LD:/language/ada/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
+   --   /Users/georgerfurt/securesystems/gnat/obj/cards.o
+   --   /Users/georgerfurt/securesystems/gnat/obj/bank_accounts.o
+   --   /Users/georgerfurt/securesystems/gnat/obj/vectors.o
+   --   /Users/georgerfurt/securesystems/gnat/obj/main.o
+   --   -L/Users/georgerfurt/securesystems/gnat/obj/
+   --   -L/Users/georgerfurt/securesystems/gnat/obj/
+   --   -L/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gcc/x86_64-apple-darwin14.5.0/4.9.4/adalib/
    --   -static
    --   -lgnat
-   --   -Wl,--stack=0x2000000
 --  END Object file/option list   
 
 end ada_main;

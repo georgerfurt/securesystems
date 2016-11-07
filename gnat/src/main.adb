@@ -7,11 +7,15 @@
 
 with Ada.Integer_Text_IO,
      Ada.Float_Text_IO,
-     Ada.Text_IO;
+     Ada.Text_IO,
+     Ada.Assertions;
 with Cards, Bank_Accounts, Vectors;
 use Bank_Accounts, Vectors;
 
+
 procedure Main is
+   pragma Assertion_Policy(Pre => Check);
+   pragma Assertion_Policy(Post => Check);
    My_Account : Account_Type;
    Balance    : Cents_Type;
    Vector_A   : constant Vector := (1.0, 1.0, 0.0);
