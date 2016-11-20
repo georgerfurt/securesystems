@@ -1,0 +1,151 @@
+V "GNAT Lib v2016"
+M P W=b
+A -mmacosx-version-min=10.11.0
+A -gnatA
+A -gnat12
+A -gnato
+A -gnata
+A -mtune=core2
+A -fPIC
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U vectors_test%b	vectors_test.adb	270377f5 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W vectors%s		vectors.adb		vectors.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-comlin.ads		20160516092930 ea62afbc ada.command_line%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20160516092928 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092931 c3282aa7 system%s
+D s-conca3.ads		20160516092932 0b705ca5 system.concat_3%s
+D s-conca4.ads		20160516092931 7e642b20 system.concat_4%s
+D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-secsta.ads		20160516092931 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
+D vectors.ads		20161120084340 f2cf7d7f vectors%s
+D vectors_test.adb	20161120093021 2d327f2b vectors_test%b
+X 1 ada.ads
+16K9*Ada 19e8 30|10r6 10r24 11r10 13r6 14r6 16r5 17r5 27r29 75r36 104r41
+. 121r36 150r41 167r36 196r41 214r3 235r5 238r41 241r5
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 30|10w10 11r14 27r33 214r7 235r9 241r9
+65I9*Exit_Status<integer> 30|11r27 27r46
+70U14*Set_Exit_Status 30|214s20 235s22 241s22
+X 3 a-except.ads
+54K13*Exceptions 349e19 30|10w28 75r40 104r45 121r40 150r45 167r40 196r45
+. 238r45
+72V13*Exception_Name{string} 30|75s51 104s56 121s51 150s56 167s51 196s56
+. 238s56
+X 5 a-numeri.ads
+16K13*Numerics 32e17 30|13r10 16r9
+X 6 a-nuelfu.ads
+18K22*Elementary_Functions[7|39] 30|13w19 16r18
+X 10 a-textio.ads
+49K13*Text_IO 471e16 30|14w10 17r9
+166U14*New_Line 30|202s3 213s3 218s5 234s5 237s5
+242U14*Put 30|203s3 204s3 206s5 209s5 219s5 221s7 224s7
+263U14*Put_Line 30|82s11 86s11 87s11 88s11 89s11 94s9 95s9 96s9 97s9 104s9
+. 128s11 132s11 133s11 134s11 135s11 140s9 141s9 142s9 143s9 150s9 174s11
+. 178s11 179s11 180s11 181s11 186s9 187s9 188s9 189s9 196s9 212s3 228s7 229s7
+. 232s7 238s5 239s5
+X 29 vectors.ads
+3K9*Vectors 132e12 30|15w6 18r5
+6R9*Vector 10e14 30|65r17 66r17 67r13 68r24 111r17 112r17 113r13 114r24 157r17
+. 158r17 159r13 160r24
+7f7*X{float} 30|68r37 68r43 79r23 79r36 114r37 114r43 125r23 125r36 160r37
+. 160r43 171r23 171r36
+8f7*Y{float} 30|68r48 68r54 79r70 79r83 114r48 114r54 125r70 125r83 160r48
+. 160r54 171r70 171r83
+9f7*Z{float} 30|68r59 68r65 79r117 79r130 114r59 114r65 125r117 125r130 160r59
+. 160r65 171r117 171r130
+13V14*"+"{6R9} 30|71s19
+25V14*"-"{6R9} 30|117s19 163s19
+X 30 vectors_test.adb
+20U11*vectors_test 20b11 243l5 243t17
+22K11 Driver_Internals 36l7 36e23 38b16 59l7 59t23 72r7 75r9 78r10 81r11
+. 84r11 85r11 92r9 93r9 97r45 100r12 103r9 105r15 118r7 121r9 124r10 127r11
+. 130r11 131r11 138r9 139r9 143r45 146r12 149r9 151r15 164r7 167r9 170r10
+. 173r11 176r11 177r11 184r9 185r9 189r45 192r12 195r9 197r15 205r6 207r5
+. 210r5 214r37 217r8 220r8 222r7 225r7 227r8 230r7 235r39 240r5 241r39
+24X5 Program_Terminate 100r29 105r32 146r29 151r32 192r29 197r32 217r25
+25b5 Fail_Result{boolean} 85m28 93m26 131m28 139m26 177m28 185m26 205r23
+. 220r25
+26b5 Unexpected_Error{boolean} 103m26 149m26 195m26 227r25
+27i5 Status{2|65I9} 207m22 210m22 214r54 222m24 225m24 230m24 235r56 240m22
+. 241r56
+29b5 Test_Case_Passed{boolean} 56r20 58r24 81m28 84m28 92m26 127m28 130m28
+. 138m26 173m28 176m28 184m26
+31U15 Set_Path 31>25 43b15 47l11 47t19 72s24 75s26 118s24 121s26 164s24 167s26
+31a25 Path{string} 43b25 45r47 45r63 46r34
+32V14 Path_Was{boolean} 32>24 48b14 52l11 52t19 78s27 124s27 170s27
+32a24 Path{string} 48b24 50r40 51r41 51r56
+33V14 Taken_Path{string} 53b14 54l67 54t77 97s62 143s62 189s62
+34V14 Passed{boolean} 55b14 56l42 56t48
+35V14 Failed{boolean} 57b14 58l46 58t52
+40a5 Test_Case_Path{string} 45m9 45r25 51r22 54r20
+41i5 Test_Case_Path_Length{natural} 46m9 50r16 54r39
+65r5 L{29|6R9} 68r35 68r46 68r57 71r17
+66r5 R{29|6R9} 68r41 68r52 68r63 71r21
+67r5 Actual{29|6R9} 71m7 79r16 79r63 79r110
+68r5 Expected{29|6R9} 79r27 79r74 79r121
+74r12 E{3|63R9} 75r67
+102r12 E{3|63R9} 104r72
+111r5 L{29|6R9} 114r35 114r46 114r57 117r17
+112r5 R{29|6R9} 114r41 114r52 114r63 117r21
+113r5 Actual{29|6R9} 117m7 125r16 125r63 125r110
+114r5 Expected{29|6R9} 125r27 125r74 125r121
+120r12 E{3|63R9} 121r67
+148r12 E{3|63R9} 150r72
+157r5 L{29|6R9} 160r35 160r46 160r57 163r17
+158r5 R{29|6R9} 160r41 160r52 160r63 163r21
+159r5 Actual{29|6R9} 163m7 171r16 171r63 171r110
+160r5 Expected{29|6R9} 171r27 171r74 171r121
+166r12 E{3|63R9} 167r67
+194r12 E{3|63R9} 196r72
+236r8 E{3|63R9} 238r72
+

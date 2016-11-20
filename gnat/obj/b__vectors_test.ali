@@ -16,19 +16,19 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b__main.adb		3268e70c NE OO PK IL
+U ada_main%b		b__vectors_test.adb	a1750971 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W system%s		system.ads		system.ali
 
-U ada_main%s		b__main.ads		937ef9ac EE NE OO PK IL
+U ada_main%s		b__vectors_test.ads	18f65098 EE NE OO PK IL
 W system%s		system.ads		system.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
 D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
-D b__main.ads		20161120090706 5056d30b ada_main%s
-D b__main.adb		20161120090706 4b2726d2 ada_main%b
+D b__vectors_test.ads	20161120093026 dbde7a3f ada_main%s
+D b__vectors_test.adb	20161120093026 53b2619b ada_main%b
 D system.ads		20160516092931 c3282aa7 system%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
 D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
@@ -37,8 +37,8 @@ X 1 ada.ads
 16K9*Ada 19e8 5|6r6
 X 2 a-except.ads
 54K13*Exceptions 349e19 5|6w10
-X 4 b__main.ads
-4K9*ada_main 375l5 375e13 5|8b14 220l5 220t13
+X 4 b__vectors_test.ads
+4K9*ada_main 405l5 405e13 5|8b14 220l5 220t13
 6i4*gnat_argc{integer} 10m22 10r22 5|198m7
 7m4*gnat_argv{6|67M9} 11m22 11r22 5|199m7
 8m4*gnat_envp{6|67M9} 12m22 12r22 5|200m7
@@ -61,6 +61,7 @@ X 4 b__main.ads
 . 194r22 196r22 198r22 200r22 202r22 204r22 206r22 208r22 210r22 212r22 214r22
 . 216r22 218r22 220r22 222r22 224r22 226r22 228r22 230r22 232r22 234r22 236r22
 . 238r22 240r22 242r22 244r22 246r22 248r22 250r22 252r22 254r22 256r22 258r22
+. 260r22 262r22 264r22 266r22 268r22 270r22 272r22 274r22 276r22 278r22
 38m4*u00001{37M9} 39r22
 40m4*u00002{37M9} 41r22
 42m4*u00003{37M9} 43r22
@@ -172,24 +173,34 @@ X 4 b__main.ads
 254m4*u00109{37M9} 255r22
 256m4*u00110{37M9} 257r22
 258m4*u00111{37M9} 259r22
-X 5 b__main.adb
-10i4 E079{short_integer} 10m46 10r46 169m7 169r15
+260m4*u00112{37M9} 261r22
+262m4*u00113{37M9} 263r22
+264m4*u00114{37M9} 265r22
+266m4*u00115{37M9} 267r22
+268m4*u00116{37M9} 269r22
+270m4*u00117{37M9} 271r22
+272m4*u00118{37M9} 273r22
+274m4*u00119{37M9} 275r22
+276m4*u00120{37M9} 277r22
+278m4*u00121{37M9} 279r22
+X 5 b__vectors_test.adb
+10i4 E089{short_integer} 10m46 10r46 169m7 169r15
 11i4 E013{short_integer} 11m46 11r46 167m7 167r15
-12i4 E023{short_integer} 12m46 12r46 142m7 142r15
-13i4 E054{short_integer} 13m46 13r46 144m7 144r15
-14i4 E104{short_integer} 14m46 14r46 146m7 146r15
-15i4 E056{short_integer} 15m46 15r46 165m7 165r15
-16i4 E053{short_integer} 16m46 16r46 149m7 149r15
-17i4 E077{short_integer} 17m46 17r46 163m7 163r15
-18i4 E025{short_integer} 18m46 18r46 152m7 152r15
-19i4 E082{short_integer} 19m46 19r46 154m7 154r15
-20i4 E072{short_integer} 20m46 20r46 46m10 46r18 162m7 162r15
-21i4 E075{short_integer} 21m46 21r46 156m7 156r15
-22i4 E073{short_integer} 22m46 22r46 158m7 158r15
-23i4 E109{short_integer} 23m46 23r46 160m7 160r15
-24i4 E017{short_integer} 24m46 24r46 171m7 171r15
-25i4 E051{short_integer} 25m46 25r46 35m7 35r15 174m7 174r15
-26i4 E103{short_integer} 26m46 26r46 175m7 175r15
+12i4 E019{short_integer} 12m46 12r46 142m7 142r15
+13i4 E077{short_integer} 13m46 13r46 144m7 144r15
+14i4 E050{short_integer} 14m46 14r46 146m7 146r15
+15i4 E062{short_integer} 15m46 15r46 165m7 165r15
+16i4 E076{short_integer} 16m46 16r46 149m7 149r15
+17i4 E087{short_integer} 17m46 17r46 163m7 163r15
+18i4 E021{short_integer} 18m46 18r46 152m7 152r15
+19i4 E092{short_integer} 19m46 19r46 154m7 154r15
+20i4 E082{short_integer} 20m46 20r46 46m10 46r18 162m7 162r15
+21i4 E085{short_integer} 21m46 21r46 156m7 156r15
+22i4 E083{short_integer} 22m46 22r46 158m7 158r15
+23i4 E119{short_integer} 23m46 23r46 160m7 160r15
+24i4 E009{short_integer} 24m46 24r46 171m7 171r15
+25i4 E074{short_integer} 25m46 25r46 35m7 35r15 174m7 174r15
+26i4 E100{short_integer} 26m46 26r46 175m7 175r15
 28a4 Local_Priority_Specific_Dispatching{string} 126r9
 29a4 Local_Interrupt_States{string} 129r27
 31b4 Is_Elaborated{boolean} 65r14 68m7 115r10 118m7
@@ -220,7 +231,7 @@ X 5 b__main.adb
 109U17*Runtime_Initialize 109>37 110b<c,__gnat_runtime_initialize>25 136s7
 109i37 Install_Handler{integer}
 112p7*Finalize_Library_Objects{73P9} 113m25 113r25 138m7
-178U14 Ada_Main_Program 179b<ada,_ada_main>24 204s7
+178U14 Ada_Main_Program 179b<ada,_ada_vectors_test>24 204s7
 187U17*Initialize 187>29 188b<c,__gnat_initialize>25 202s7
 187m29 Addr{6|67M9}
 190U17*Finalize 191b<c,__gnat_finalize>25 206s7

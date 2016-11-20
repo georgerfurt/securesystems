@@ -14,47 +14,35 @@ P ZX
 RN
 RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		816dce3e NE OO SU
+U main%b		main.adb		81799ff0 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
-W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W bank_accounts%s	bank_accounts.adb	bank_accounts.ali
-W cards%b		cards.adb		cards.ali
 W vectors%s		vectors.adb		vectors.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
 D a-flteio.ads		20160516092929 e18a47a0 ada.float_text_io%s
-D a-inteio.ads		20160516092932 f64b89a4 ada.integer_text_io%s
 D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
 D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
-D a-nudira.ads		20160516092928 71e55def ada.numerics.discrete_random%s
 D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
 D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
 D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
 D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
-D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
-D bank_accounts.ads	20161107104931 a6afe080 bank_accounts%s
-D cards.adb		20161106214749 7368a517 cards%b
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
-D main.adb		20161107115222 89c9cd06 main%b
+D main.adb		20161120085832 aa5150fb main%b
 D system.ads		20160516092931 c3282aa7 system%s
-D s-conca3.ads		20160516092932 0b705ca5 system.concat_3%s
 D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
 D s-exctab.ads		20160516092931 54135002 system.exception_table%s
 D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
-D s-imenne.ads		20160516092929 614c06c0 system.img_enum_new%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
-D s-rannum.ads		20160516092929 99ade2f2 system.random_numbers%s
 D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
 D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
 D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
@@ -62,63 +50,44 @@ D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
-D vectors.ads		20161107120815 f2cf7d7f vectors%s
+D vectors.ads		20161120084340 f2cf7d7f vectors%s
 X 1 ada.ads
-16K9*Ada 19e8 19|8r6 9r6 10r6 21r24 22r24 23r24
+16K9*Ada 19e8 14|8r6 9r6 18r24 19r24
 X 3 a-flteio.ads
-20K13*Float_Text_IO[12|46] 19|9w10 22r28
-X 4 a-inteio.ads
-18K13*Integer_Text_IO[13|46] 19|8w10 21r28
-X 11 a-textio.ads
-49K13*Text_IO 471e16 19|10w10 23r28
+20K13*Float_Text_IO[10|46] 14|8w10 18r28
+X 9 a-textio.ads
+49K13*Text_IO 471e16 14|9w10 19r28
 73I12*Field{integer}
-166U14*New_Line 19|34s8 36s8 40s8 47s8 55s8 61s8 67s8 75s8 78s8 89s8 97s8
-. 105s8 113s8 121s8 130s8 136s8
-242U14*Put 19|45s8 53s8 59s8 65s8 73s8 76s8 85s8 87s8 93s8 95s8 101s8 103s8
-. 109s8 111s8 117s8 119s8 124s8 126s8 128s8 134s8
-263U14*Put_Line 19|33s8 39s8 42s8 49s8 57s8 63s8 69s8 81s8 83s8 91s8 99s8
-. 107s8 115s8 123s8 132s8
-X 12 a-tiflio.ads
-68U14*Put 19|104s8[3|20] 110s8[3|20] 129s8[3|20] 135s8[3|20]
-69f7 Item{float} 19|110r13[3|20]
-70i7 Fore{11|73I12} 19|104r34[3|20] 110r26[3|20] 129r44[3|20] 135r44[3|20]
-71i7 Aft{11|73I12} 19|104r45[3|20] 110r37[3|20] 129r55[3|20] 135r55[3|20]
-72i7 Exp{11|73I12} 19|104r55[3|20] 110r47[3|20] 129r65[3|20] 135r65[3|20]
-X 13 a-tiinio.ads
-66U14*Put 19|46s8[4|18] 54s8[4|18] 60s8[4|18] 66s8[4|18] 74s8[4|18] 77s8[4|18]
-X 15 bank_accounts.ads
-1K9*Bank_Accounts 43e18 19|12w6 14r5
-2I12*Cents_Type{natural}
-5R9*Account_Type 7e14 19|25r16 26r16
-10V13*Get_Balance{2I12} 19|46s13 54s13 60s13 66s13 74s13 77s13
-13U14*Deposit 19|44s4 50s4 58s4 64s4
-30U14*Transfer 19|72s4
-X 16 cards.adb
-5U11*Cards 19|11w6 35s4
-X 19 main.adb
-16U11*Main 16b11 138l5 138t9
-21K12 IIO=21:28 46r4 54r4 60r4 66r4 74r4 77r4
-22K12 FIO=22:28 104r4 110r4 129r4 135r4
-23K12 TIO=23:28 33r4 34r4 36r4 39r4 40r4 42r4 45r4 47r4 49r4 53r4 55r4 57r4
-. 59r4 61r4 63r4 65r4 67r4 69r4 73r4 75r4 76r4 78r4 81r4 83r4 85r4 87r4 89r4
-. 91r4 93r4 95r4 97r4 99r4 101r4 103r4 105r4 107r4 109r4 111r4 113r4 115r4
-. 117r4 119r4 121r4 123r4 124r4 126r4 128r4 130r4 132r4 134r4 136r4
-25r4 Account_A{15|5R9} 44m13 44r13 46r26 60r26 64m13 64r13 72m14 72r14 74r26
-26r4 Account_B{15|5R9} 50m13 50r13 54r26 58m13 58r13 66r26 72m25 72r25 77r26
-28r4 Vector_A{35|6R9} 84r9 88r9 92r9 96r9 100r9 104r13 108r9 112r9 116r9
-. 120r24 125r9 129r23
-29r4 Vector_B{35|6R9} 86r9 88r20 94r9 96r20 102r9 104r24 118r9 120r34 127r9
-. 129r33 133r9 135r33
-X 35 vectors.ads
-3K9*Vectors 19|13w6 14r20 35|132e12
-6R9*Vector 19|28r26 29r26 35|10e14
-13V14*"+"{6R9} 19|88s18
-25V14*"-"{6R9} 19|96s18
-37V14*"*"{6R9} 19|112s18
-49V14*"*"{float} 19|104s22
-101V13*Cross_Product{6R9} 19|120s9
-113V13*Distance{float} 19|129s13
-120V13*Distance_To_Origin{float} 19|135s13
-130U14*Put 19|84s4 86s4 88s4 92s4 94s4 96s4 100s4 102s4 108s4 112s4 116s4
-. 118s4 120s4 125s4 127s4 133s4
+166U14*New_Line 14|35s8 43s8 51s8 59s8 67s8 76s8 82s8
+242U14*Put 14|31s8 33s8 39s8 41s8 47s8 49s8 55s8 57s8 63s8 65s8 70s8 72s8
+. 74s8 80s8
+263U14*Put_Line 14|27s8 29s8 37s8 45s8 53s8 61s8 69s8 78s8
+X 10 a-tiflio.ads
+68U14*Put 14|50s8[3|20] 56s8[3|20] 75s8[3|20] 81s8[3|20]
+69f7 Item{float} 14|56r13[3|20]
+70i7 Fore{9|73I12} 14|50r34[3|20] 56r26[3|20] 75r44[3|20] 81r44[3|20]
+71i7 Aft{9|73I12} 14|50r45[3|20] 56r37[3|20] 75r55[3|20] 81r55[3|20]
+72i7 Exp{9|73I12} 14|50r55[3|20] 56r47[3|20] 75r65[3|20] 81r65[3|20]
+X 14 main.adb
+13U11*Main 13b11 84l5 84t9
+18K12 FIO=18:28 50r4 56r4 75r4 81r4
+19K12 TIO=19:28 27r4 29r4 31r4 33r4 35r4 37r4 39r4 41r4 43r4 45r4 47r4 49r4
+. 51r4 53r4 55r4 57r4 59r4 61r4 63r4 65r4 67r4 69r4 70r4 72r4 74r4 76r4 78r4
+. 80r4 82r4
+22r4 Vector_A{27|6R9} 30r9 34r9 38r9 42r9 46r9 50r13 54r9 58r9 62r9 66r24
+. 71r9 75r23
+23r4 Vector_B{27|6R9} 32r9 34r20 40r9 42r20 48r9 50r24 64r9 66r34 73r9 75r33
+. 79r9 81r33
+X 27 vectors.ads
+3K9*Vectors 14|10w6 11r5 27|132e12
+6R9*Vector 14|22r26 23r26 27|10e14
+13V14*"+"{6R9} 14|34s18
+25V14*"-"{6R9} 14|42s18
+37V14*"*"{6R9} 14|58s18
+49V14*"*"{float} 14|50s22
+101V13*Cross_Product{6R9} 14|66s9
+113V13*Distance{float} 14|75s13
+120V13*Distance_To_Origin{float} 14|81s13
+130U14*Put 14|30s4 32s4 34s4 38s4 40s4 42s4 46s4 48s4 54s4 58s4 62s4 64s4
+. 66s4 71s4 73s4 79s4
 
