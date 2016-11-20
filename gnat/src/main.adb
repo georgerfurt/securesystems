@@ -81,4 +81,5 @@ begin
    FIO.Put (Distance_To_Origin (Vector_B), Fore => 0, Aft => 2, Exp => 0);
    TIO.New_Line (2);
 
+
 end Main;

@@ -155,12 +155,12 @@ begin  -- unit main block
   -- Test Case (3)   Test Multiply
   declare
     L: constant Vector := (10.0, 12.0, 8.0);
-    R: constant Vector := (5.0, 6.0, 7.0);
+    R: float := 3.0;
     Actual: Vector;
-    Expected: constant Vector := (L.X * R.X, L.Y * R.Y, L.Z * R.Z);
+    Expected: constant Vector := (L.X * R, L.Y * R, L.Z * R);
   begin  -- test case
     begin  -- test part
-      Actual := L - R;
+      Actual := L * R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -194,6 +194,281 @@ begin  -- unit main block
       when E: others =>
         Driver_Internals.Unexpected_Error := True;
         Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 3.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (4)   Test Scalar
+  declare
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Float;
+    Expected: Float := (L.X * R.X + L.Y * R.Y + L.Z * R.Z);
+  begin  -- test case
+    begin  -- test part
+      Actual := L * R;
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual - Expected) < 0.000001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(4)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(4)  Test Scalar");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:33 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(4)  Test Scalar");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:33 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 4.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (5)   Test Equality
+  declare
+    L: constant Vector := (2.0, 1.0, 0.0);
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Boolean;
+    Expected: Boolean := true;
+  begin  -- test case
+    begin  -- test part
+      Actual := L = R;
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if Actual = Expected
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(5)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(5)  Test Equality");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:41 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(5)  Test Equality");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:41 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 5.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (6)   Test Orthogonal
+  declare
+    L: constant Vector := (2.0, 1.0, 0.0);
+    R: constant Vector := (3.0, -6.0, 8.0);
+    Actual: Boolean;
+    Expected: Boolean := true;
+  begin  -- test case
+    begin  -- test part
+      Actual := Are_Orthogonal(L,R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if Actual = Expected
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(6)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(6)  Test Orthogonal");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:49 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(6)  Test Orthogonal");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:49 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 6.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (7)   Test CrossProduct
+  declare
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Vector;
+    Expected: constant Vector := (L.Y * R.Z + L.Z * R.Y, L.Z * R.X + L.X * R.Z, L.X * R.Y + L.Y * R.X);
+  begin  -- test case
+    begin  -- test part
+      Actual := Cross_Product(L,R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(7)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(7)  Test CrossProduct");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:57 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(7)  Test CrossProduct");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:57 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 7.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (8)   Test Distance
+  declare
+    L: constant Vector := (1.0, 1.0, 0.0);
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Float;
+    Expected: Float := 1.0;
+  begin  -- test case
+    begin  -- test part
+      Actual := Distance(L, R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual - Expected) < 0.000001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(8)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(8)  Test Distance");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:65 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(8)  Test Distance");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:65 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 8.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (9)   Test Distance_To_Origin
+  declare
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Float;
+    Expected: Float := 2.23607;
+  begin  -- test case
+    begin  -- test part
+      Actual := Distance_To_Origin(R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual - Expected) < 0.001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(9)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(9)  Test Distance_To_Origin");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:74 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(9)  Test Distance_To_Origin");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:74 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 9.");
         raise Driver_Internals.Program_Terminate;
     end;  -- result part
   end;  -- test case

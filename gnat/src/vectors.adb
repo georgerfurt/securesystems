@@ -45,9 +45,9 @@ package body Vectors is
    -- Returns False otherwise.
    function "="(Left: Vector; Right: Vector) return Boolean is
    begin
-      if (Left.X = Right.X
-          and Left.Y = Right.Y
-          and Left.Z = Right.Y) then
+      if (abs(Left.X - Right.X) < 0.00001
+          and abs(Left.Y - Right.Y) < 0.00001
+          and abs(Left.Z - Right.Y) < 0.00001) then
          return True;
       else
          return false;
@@ -57,7 +57,7 @@ package body Vectors is
    -- Determines if both vectors stand orthogonal to each other or not.
    function Are_Orthogonal(Left: Vector; Right: Vector) return Boolean is
    begin
-      if (Left * Right = 0.0) then
+      if (abs(Left * Right)< 0.0001) then
          return true;
       else
          return false;

@@ -2,8 +2,6 @@ V "GNAT Lib v2016"
 M P W=b
 A -mmacosx-version-min=10.11.0
 A -gnatA
-A -gnatwa
-A -gnatwe
 A -gnat12
 A -gnato
 A -gnata
@@ -37,7 +35,7 @@ D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
-D main.adb		20161120085832 aa5150fb main%b
+D main.adb		20161120223159 aa5150fb main%b
 D system.ads		20160516092931 c3282aa7 system%s
 D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
 D s-exctab.ads		20160516092931 54135002 system.exception_table%s
@@ -69,7 +67,7 @@ X 10 a-tiflio.ads
 71i7 Aft{9|73I12} 14|50r45[3|20] 56r37[3|20] 75r55[3|20] 81r55[3|20]
 72i7 Exp{9|73I12} 14|50r55[3|20] 56r47[3|20] 75r65[3|20] 81r65[3|20]
 X 14 main.adb
-13U11*Main 13b11 84l5 84t9
+13U11*Main 13b11 85l5 85t9
 18K12 FIO=18:28 50r4 56r4 75r4 81r4
 19K12 TIO=19:28 27r4 29r4 31r4 33r4 35r4 37r4 39r4 41r4 43r4 45r4 47r4 49r4
 . 51r4 53r4 55r4 57r4 59r4 61r4 63r4 65r4 67r4 69r4 70r4 72r4 74r4 76r4 78r4
