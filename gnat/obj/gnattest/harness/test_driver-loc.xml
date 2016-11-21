@@ -302,17 +302,9 @@
       <vfs_project />
       <vfs_file>/Users/georgerfurt/securesystems/gnat/src/vectors.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 39" >
+    <file_marker current="true" column=" 55" line=" 39" >
       <vfs_project />
       <vfs_file>/Users/georgerfurt/securesystems/gnat/src/vectors.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 49" line=" 360" >
-      <vfs_project>/Users/georgerfurt/securesystems/gnat/assignment2.gpr</vfs_project>
-      <vfs_file>/Users/georgerfurt/securesystems/gnat/src/vectors_test.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>/Users/georgerfurt/securesystems/gnat/assignment2.gpr</vfs_project>
-      <vfs_file>/Users/georgerfurt/securesystems/gnat/src/elections.ads</vfs_file>
     </file_marker>
   </Project>
 </Locations>
