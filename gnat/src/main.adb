@@ -18,12 +18,11 @@ procedure Main is
    package FIO renames Ada.Float_Text_IO;
    package TIO renames Ada.Text_IO;
 
-
    Vector_A   : constant Vector := (1.0, 1.0, 0.0);
    Vector_B   : constant Vector := (2.0, 1.0, 0.0);
-   L: constant Vector := (2.0, 1.0, 0.0);
-   R: constant Vector := (3.0, -6.0, 8.0);
-   Test: boolean := false;
+   L : constant Vector := (2.0, 1.0, 0.0);
+   R : constant Vector := (3.0, -6.0, 8.0);
+   Test : boolean := false;
 
 begin
     --  vectors (Mini-Project)
@@ -84,7 +83,12 @@ begin
    FIO.Put (Distance_To_Origin (Vector_B), Fore => 0, Aft => 2, Exp => 0);
    TIO.New_Line (2);
 
-   Test:= Are_Orthogonal(L,R);
+   Test := Are_Orthogonal (L, R);
 
+   if Test then
+      TIO.Put_Line ("orthogonal works");
+   else
+      TIO.Put_Line ("orthogonal fails");
+   end if;
 
 end Main;

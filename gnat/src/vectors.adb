@@ -3,7 +3,7 @@ with Ada.Text_IO,
 package body Vectors is
 
    -- Adds two vectors dimension-wise.
-   function "+" (Left: Vector; Right: Vector) return Vector is
+   function "+" (Left : Vector; Right : Vector) return Vector is
       Sum : Vector;
    begin
       Sum.X := Left.X + Right.X;
@@ -14,7 +14,7 @@ package body Vectors is
    end;
 
    -- Subtracts the right vector from the left one dimension-wise.
-   function "-" (Left: Vector; Right: Vector) return Vector is
+   function "-" (Left : Vector; Right : Vector) return Vector is
       Difference : Vector;
    begin
       Difference.X := Left.X - Right.X;
@@ -25,7 +25,7 @@ package body Vectors is
    end;
 
    -- Multiplies all dimensions of Left by Right.
-   function "*" (Left: Vector; Right: Float) return Vector is
+   function "*" (Left : Vector; Right : Float) return Vector is
       Product : Vector;
    begin
       Product.X := Left.X * Right;
@@ -36,14 +36,14 @@ package body Vectors is
    end;
 
    -- Computes the scalar product.
-   function "*" (Left: Vector; Right: Vector) return Float is
+   function "*" (Left : Vector; Right : Vector) return Float is
    begin
       return Left.X * Right.X + Left.Y * Right.Y + Left.Z * Right.Z;
    end;
 
    -- Returns True if all dimensions of Left are equal to that of Right;
    -- Returns False otherwise.
-   function "="(Left: Vector; Right: Vector) return Boolean is
+   function "="(Left : Vector; Right : Vector) return Boolean is
    begin
       return (abs (Left.X - Right.X) < Epsilon
           and then abs (Left.Y - Right.Y) < Epsilon
@@ -51,9 +51,9 @@ package body Vectors is
    end;
 
    -- Determines if both vectors stand orthogonal to each other or not.
-   function Are_Orthogonal(Left: Vector; Right: Vector) return Boolean is
+   function Are_Orthogonal (Left : Vector; Right : Vector) return Boolean is
    begin
-      if (abs(Left * Right)< Epsilon) then
+      if abs (Left * Right) < Epsilon then
          return true;
       else
          return false;
@@ -61,7 +61,7 @@ package body Vectors is
    end;
 
    -- Computes the cross product.
-   function Cross_Product (Left: Vector; Right: Vector) return Vector is
+   function Cross_Product (Left : Vector; Right : Vector) return Vector is
       Product : Vector;
    begin
       Product.X := Left.Y * Right.Z + Left.Z * Right.Y;
@@ -72,20 +72,20 @@ package body Vectors is
    end;
 
    -- Computes the distance between both vectors.
-   function Distance (Left: Vector; Right: Vector) return Float is
+   function Distance (Left : Vector; Right : Vector) return Float is
    begin
       return Distance_To_Origin (Right - Left);
    end;
 
    -- Computes the distance to the origin of the coordinate system.
-   function Distance_To_Origin (Item: Vector) return Float is
+   function Distance_To_Origin (Item : Vector) return Float is
       package Math is new Ada.Numerics.Generic_Elementary_Functions (Float);
    begin
       return Math.Sqrt (Item.X * Item.X + Item.Y * Item.Y + Item.Z * Item.Z);
    end;
 
    -- Prints the vector in the format (X, Y, Z).
-   procedure Put (Item: Vector) is
+   procedure Put (Item : Vector) is
    begin
       Ada.Text_IO.Put ("(");
       Ada.Float_Text_IO.Put (Item.X);

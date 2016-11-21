@@ -22,7 +22,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vectors_test%b	vectors_test.adb	d518f9b0 NE OO SU IL
+U vectors_test%b	vectors_test.adb	480068c2 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
@@ -66,8 +66,8 @@ D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
-D vectors.ads		20161121090242 fbe81cda vectors%s
-D vectors_test.adb	20161121090242 d60e90cb vectors_test%b
+D vectors.ads		20161121095742 66f08da8 vectors%s
+D vectors_test.adb	20161121095202 d60e90cb vectors_test%b
 X 1 ada.ads
 16K9*Ada 19e8 30|10r6 10r24 11r10 13r6 14r6 16r5 17r5 27r29 75r36 104r41
 . 121r36 150r41 167r36 196r41 213r36 242r41 259r36 288r41 305r36 334r41 351r36
