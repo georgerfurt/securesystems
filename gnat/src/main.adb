@@ -7,8 +7,9 @@
 
 with Ada.Float_Text_IO,
      Ada.Text_IO,
-     Vectors;
-use Vectors;
+     Vectors,
+     Elections;
+use Vectors, Elections;
 
 procedure Main is
 
@@ -24,7 +25,7 @@ procedure Main is
    L: constant Vector := (2.0, 1.0, 0.0);
    R: constant Vector := (3.0, -6.0, 8.0);
    Test: boolean := false;
-
+   P_A: Party :=A;
 begin
     --  vectors (Mini-Project)
    TIO.Put_Line ("Task 3) Vectors");
@@ -85,6 +86,10 @@ begin
    TIO.New_Line (2);
 
    Test:= Are_Orthogonal(L,R);
+
+   Initialize(100);
+
+   Vote_For(P_A);
 
 
 end Main;

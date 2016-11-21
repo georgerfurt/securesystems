@@ -1,10 +1,11 @@
 V "GNAT Lib v2016"
+A -mmacosx-version-min=10.11.0
 A -gnatA
 A -gnat12
 A -gnato
 A -gnata
-A -mtune=generic
-A -march=pentium4
+A -mtune=core2
+A -fPIC
 P ZX
 
 RN
@@ -42,37 +43,37 @@ W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
-D a-flteio.ads		20160516092928 e18a47a0 ada.float_text_io%s
-D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-flteio.ads		20160516092929 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
 D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
-D a-numaux.ads		20160516092930 243fe0b7 ada.numerics.aux%s
-D a-ngelfu.ads		20160516092930 b8fdcb46 ada.numerics.generic_elementary_functions%s
-D a-ngelfu.adb		20160516092928 5e96a931 ada.numerics.generic_elementary_functions%b
-D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-numaux.ads		20160516092931 243fe0b7 ada.numerics.aux%s
+D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20160516092929 5e96a931 ada.numerics.generic_elementary_functions%b
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
 D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
-D a-tiflio.ads		20160516092926 56fbda09 ada.text_io.float_io%s
-D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
-D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
-D system.ads		20160516092930 2da59038 system%s
-D s-assert.ads		20160516092930 cd8d2c94 system.assertions%s
-D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
-D s-exctab.ads		20160516092930 54135002 system.exception_table%s
-D s-exnllf.ads		20160516092930 bc7ebbdc system.exn_llf%s
+D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092931 c3282aa7 system%s
+D s-assert.ads		20160516092931 cd8d2c94 system.assertions%s
+D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-exnllf.ads		20160516092931 bc7ebbdc system.exn_llf%s
 D s-fatflt.ads		20160516092930 11beb392 system.fat_flt%s
-D s-fatgen.ads		20160516092932 49cbaf86 system.fat_gen%s
-D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-fatgen.ads		20160516092933 49cbaf86 system.fat_gen%s
+D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
-D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
 D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
-D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
 D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
-D vectors.ads		20161121090242 fbe81cda vectors%s
-D vectors.adb		20161121090242 ea02de43 vectors%b
+D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
+D vectors.ads		20161121083526 fbe81cda vectors%s
+D vectors.adb		20161121074453 ea02de43 vectors%b
 X 1 ada.ads
 16K9*Ada 19e8 32|1r6 4r24 33|1r6 2r6 82r27 90r7 91r7 92r7 93r7 94r7 95r7
 . 96r7

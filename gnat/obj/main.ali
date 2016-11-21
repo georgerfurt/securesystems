@@ -1,11 +1,12 @@
 V "GNAT Lib v2016"
 M P W=b
+A -mmacosx-version-min=10.11.0
 A -gnatA
 A -gnat12
 A -gnato
 A -gnata
-A -mtune=generic
-A -march=pentium4
+A -mtune=core2
+A -fPIC
 P ZX
 
 RN
@@ -14,81 +15,90 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		bdb11a26 NE OO SU
+U main%b		main.adb		2826eb09 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W elections%s		elections.adb		elections.ali
 W vectors%s		vectors.adb		vectors.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
-D a-flteio.ads		20160516092928 e18a47a0 ada.float_text_io%s
-D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-flteio.ads		20160516092929 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
 D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
-D a-ngelfu.ads		20160516092930 b8fdcb46 ada.numerics.generic_elementary_functions%s
-D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
 D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
-D a-tiflio.ads		20160516092926 56fbda09 ada.text_io.float_io%s
-D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D elections.ads		20161121095117 dd298994 elections%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
-D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
-D main.adb		20161121090242 9fbeb488 main%b
-D system.ads		20160516092930 2da59038 system%s
-D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
-D s-exctab.ads		20160516092930 54135002 system.exception_table%s
-D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D main.adb		20161121094751 d700cc33 main%b
+D system.ads		20160516092931 c3282aa7 system%s
+D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
-D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
 D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
-D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
 D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
-D vectors.ads		20161121090242 fbe81cda vectors%s
+D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
+D vectors.ads		20161121083526 fbe81cda vectors%s
 X 1 ada.ads
-16K9*Ada 19e8 14|8r6 9r6 18r24 19r24
+16K9*Ada 19e8 15|8r6 9r6 19r24 20r24
 X 3 a-flteio.ads
-20K13*Float_Text_IO[10|46] 14|8w10 18r28
+20K13*Float_Text_IO[10|46] 15|8w10 19r28
 X 9 a-textio.ads
-49K13*Text_IO 471e16 14|9w10 19r28
+49K13*Text_IO 471e16 15|9w10 20r28
 73I12*Field{integer}
-166U14*New_Line 14|38s8 46s8 54s8 62s8 70s8 79s8 85s8
-242U14*Put 14|34s8 36s8 42s8 44s8 50s8 52s8 58s8 60s8 66s8 68s8 73s8 75s8
-. 77s8 83s8
-263U14*Put_Line 14|30s8 32s8 40s8 48s8 56s8 64s8 72s8 81s8
+166U14*New_Line 15|39s8 47s8 55s8 63s8 71s8 80s8 86s8
+242U14*Put 15|35s8 37s8 43s8 45s8 51s8 53s8 59s8 61s8 67s8 69s8 74s8 76s8
+. 78s8 84s8
+263U14*Put_Line 15|31s8 33s8 41s8 49s8 57s8 65s8 73s8 82s8
 X 10 a-tiflio.ads
-68U14*Put 14|53s8[3|20] 59s8[3|20] 78s8[3|20] 84s8[3|20]
-69f7 Item{float} 14|59r13[3|20]
-70i7 Fore{9|73I12} 14|53r34[3|20] 59r26[3|20] 78r44[3|20] 84r44[3|20]
-71i7 Aft{9|73I12} 14|53r45[3|20] 59r37[3|20] 78r55[3|20] 84r55[3|20]
-72i7 Exp{9|73I12} 14|53r55[3|20] 59r47[3|20] 78r65[3|20] 84r65[3|20]
-X 14 main.adb
-13U11*Main 13b11 90l5 90t9
-18K12 FIO=18:28 53r4 59r4 78r4 84r4
-19K12 TIO=19:28 30r4 32r4 34r4 36r4 38r4 40r4 42r4 44r4 46r4 48r4 50r4 52r4
-. 54r4 56r4 58r4 60r4 62r4 64r4 66r4 68r4 70r4 72r4 73r4 75r4 77r4 79r4 81r4
-. 83r4 85r4
-22r4 Vector_A{27|6R9} 33r9 37r9 41r9 45r9 49r9 53r13 57r9 61r9 65r9 69r24
-. 74r9 78r23
-23r4 Vector_B{27|6R9} 35r9 37r20 43r9 45r20 51r9 53r24 67r9 69r34 76r9 78r33
-. 82r9 84r33
-24r4 L{27|6R9} 87r26
-25r4 R{27|6R9} 87r28
-26b4 Test{boolean} 87m4
-X 27 vectors.ads
-3K9*Vectors 14|10w6 11r5 27|115e12
-6R9*Vector 14|22r26 23r26 24r16 25r16 27|10e14
-14V14*"+"{6R9} 14|37s18
-26V14*"-"{6R9} 14|45s18
-38V14*"*"{6R9} 14|61s18
-47V14*"*"{float} 14|53s22
-77V13*Are_Orthogonal{boolean} 14|87s11
-84V13*Cross_Product{6R9} 14|69s9
-96V13*Distance{float} 14|78s13
-103V13*Distance_To_Origin{float} 14|84s13
-113U14*Put 14|33s4 35s4 37s4 41s4 43s4 45s4 49s4 51s4 57s4 61s4 65s4 67s4
-. 69s4 74s4 76s4 82s4
+68U14*Put 15|54s8[3|20] 60s8[3|20] 79s8[3|20] 85s8[3|20]
+69f7 Item{float} 15|60r13[3|20]
+70i7 Fore{9|73I12} 15|54r34[3|20] 60r26[3|20] 79r44[3|20] 85r44[3|20]
+71i7 Aft{9|73I12} 15|54r45[3|20] 60r37[3|20] 79r55[3|20] 85r55[3|20]
+72i7 Exp{9|73I12} 15|54r55[3|20] 60r47[3|20] 79r65[3|20] 85r65[3|20]
+X 12 elections.ads
+1K9*Elections 27e14 15|11w6 12r14
+2E10*Party 2e37 15|28r9
+2n26*A{2E10} 15|28r17
+12U14*Initialize 15|90s4
+16U14*Vote_For 15|92s4
+X 15 main.adb
+14U11*Main 14b11 95l5 95t9
+19K12 FIO=19:28 54r4 60r4 79r4 85r4
+20K12 TIO=20:28 31r4 33r4 35r4 37r4 39r4 41r4 43r4 45r4 47r4 49r4 51r4 53r4
+. 55r4 57r4 59r4 61r4 63r4 65r4 67r4 69r4 71r4 73r4 74r4 76r4 78r4 80r4 82r4
+. 84r4 86r4
+23r4 Vector_A{28|6R9} 34r9 38r9 42r9 46r9 50r9 54r13 58r9 62r9 66r9 70r24
+. 75r9 79r23
+24r4 Vector_B{28|6R9} 36r9 38r20 44r9 46r20 52r9 54r24 68r9 70r34 77r9 79r33
+. 83r9 85r33
+25r4 L{28|6R9} 88r26
+26r4 R{28|6R9} 88r28
+27b4 Test{boolean} 88m4
+28e4 P_A{12|2E10} 92r13
+X 28 vectors.ads
+3K9*Vectors 15|10w6 12r5 28|115e12
+6R9*Vector 15|23r26 24r26 25r16 26r16 28|10e14
+14V14*"+"{6R9} 15|38s18
+26V14*"-"{6R9} 15|46s18
+38V14*"*"{6R9} 15|62s18
+47V14*"*"{float} 15|54s22
+77V13*Are_Orthogonal{boolean} 15|88s11
+84V13*Cross_Product{6R9} 15|70s9
+96V13*Distance{float} 15|79s13
+103V13*Distance_To_Origin{float} 15|85s13
+113U14*Put 15|34s4 36s4 38s4 42s4 44s4 46s4 50s4 52s4 58s4 62s4 66s4 68s4
+. 70s4 75s4 77s4 83s4
 
