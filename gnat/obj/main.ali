@@ -1,12 +1,11 @@
 V "GNAT Lib v2016"
 M P W=b
-A -mmacosx-version-min=10.11.0
 A -gnatA
 A -gnat12
 A -gnato
 A -gnata
-A -mtune=core2
-A -fPIC
+A -mtune=generic
+A -march=pentium4
 P ZX
 
 RN
@@ -24,31 +23,31 @@ W vectors%s		vectors.adb		vectors.ali
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-except.ads		20160516092928 291912d5 ada.exceptions%s
-D a-flteio.ads		20160516092929 e18a47a0 ada.float_text_io%s
-D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
+D a-flteio.ads		20160516092928 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
 D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
-D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
-D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-ngelfu.ads		20160516092930 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
 D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
-D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
-D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D a-tiflio.ads		20160516092926 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
-D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
-D main.adb		20161121074743 9fbeb488 main%b
-D system.ads		20160516092931 c3282aa7 system%s
-D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
-D s-exctab.ads		20160516092931 54135002 system.exception_table%s
-D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D main.adb		20161121090242 9fbeb488 main%b
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
 D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
-D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
 D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
-D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
 D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
-D vectors.ads		20161121083526 fbe81cda vectors%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D vectors.ads		20161121090242 fbe81cda vectors%s
 X 1 ada.ads
 16K9*Ada 19e8 14|8r6 9r6 18r24 19r24
 X 3 a-flteio.ads

@@ -1,18 +1,20 @@
 [GENERATED OBJECT FILE]
 b__vectors_test.o
 [PROJECT FILES]
-/Users/georgerfurt/securesystems/gnat/assignment2.gpr
-20161120090704
+C:\Workspaces\Git\securesystems\gnat\assignment2.gpr
+20161121090240
 [BOUND OBJECT FILES]
-/Users/georgerfurt/securesystems/gnat/obj/vectors.o
-/Users/georgerfurt/securesystems/gnat/obj/vectors_test.o
+C:\Workspaces\Git\securesystems\gnat\obj\vectors.o
+C:\Workspaces\Git\securesystems\gnat\obj\vectors_test.o
 [GENERATED SOURCE FILES]
 b__vectors_test.ads
 b__vectors_test.adb
 b__vectors_test.ali
 [RESULTING OPTIONS]
--L/Users/georgerfurt/securesystems/gnat/obj/
--L/Users/georgerfurt/securesystems/gnat/obj/
--L/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gcc/x86_64-apple-darwin14.5.0/4.9.4/adalib/
+-LC:\Workspaces\Git\securesystems\gnat\obj\
+-LC:\Workspaces\Git\securesystems\gnat\obj\
+-LC:/language/ada/lib/gcc/i686-pc-mingw32/4.9.4/adalib/
 -static
-/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gcc/x86_64-apple-darwin14.5.0/4.9.4/adalib/libgnat.a
+-static-libgcc
+C:/language/ada/lib/gcc/i686-pc-mingw32/4.9.4/adalib/libgnat.a
+-Wl,--stack=0x2000000

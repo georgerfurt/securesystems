@@ -7,12 +7,22 @@ package Elections is
     Num_Votes_Made: Natural := 0;
     Num_Total_Voters: Natural := 0;
 
-    procedure Initialize(Num_Voters: Natural);
-    -- Resets the number of made votes and votes for all parties to 0, and
-    -- sets the number of total Voters to the given.
-    procedure Vote_For(Vote: Party);
-    function All_Voters_Voted return Boolean;
-    function Find_Winner return Party;
-    -- Returns Party with most votes assigned.
-    -- Returns None if multiple parties share the highest votes.
+   -- Resets the number of made votes and votes for all parties to 0, and
+   -- sets the number of total Voters to the given.
+   procedure Initialize (Num_Voters: Natural) with
+     Post => (Num_Votes_Made = 0 and then
+                Votes_Distribution = Zero_Votes_Distribution);
+
+   procedure Vote_For (Vote: Party) with
+     Post => (Votes_Distribution(Party) = Votes_Distribution(Party)'Old +1 and then
+                  Votes_Distribution(Party) = Votes_Distribution(Party)'Old);
+
+   function All_Voters_Voted return Boolean with
+     Post => ((Num_Votes_Made = Num_Total_Voters and then All_Voters_Voted'Result) or
+                  (Num_Votes_Made < Num_Total_Voters and then not All_Voters_Voted'Result));
+
+   -- Returns Party with most votes assigned.
+   -- Returns None if multiple parties share the highest votes.
+   function Find_Winner return Party;
+
 end Elections;
