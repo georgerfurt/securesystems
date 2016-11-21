@@ -16,8 +16,7 @@ package Elections is
        and then Votes_Distribution = Zero_Votes_Distribution);
 
    procedure Vote_For (Vote : Party) with
-     Pre => (Vote /= None
-             and then Num_Votes_Made < Num_Total_Voters);
+     Pre => (Num_Votes_Made < Num_Total_Voters);
 
 --       Post =>
 --        (Votes_Distribution(Party) = Votes_Distribution (Party)'Old + 1);
@@ -30,6 +29,8 @@ package Elections is
 
       -- Returns Party with most votes assigned.
       -- Returns None if multiple parties share the highest votes.
-   function Find_Winner return Party;
+   function Find_Winner return Party with
+     Pre =>
+       (Votes_Distribution (None) + Votes_Distribution (A) + Votes_Distribution (B) + Votes_Distribution (C) + Votes_Distribution (D) = Num_Votes_Made);
 
 end Elections;

@@ -58,7 +58,7 @@ Pass	Actual = Expected
 Define L: constant Vector := (10.0, 12.0, 8.0);
 	R: constant Vector := (5.0, 6.0, 7.0);
 	Actual: Vector;
-	Expected: constant Vector := (L.Y * R.Z + L.Z * R.Y, L.Z * R.X + L.X * R.Z, L.X * R.Y + L.Y * R.X);
+	Expected: constant Vector := (L.Y * R.Z - L.Z * R.Y, L.Z * R.X - L.X * R.Z, L.X * R.Y - L.Y * R.X);
 Test    Actual := Cross_Product(L,R);
 Pass	abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
 

@@ -3,17 +3,21 @@
 
   -- Test Driver Source
 
-  -- File:       /users/georgerfurt/securesystems/gnat/src/elections_test.adb
-  -- Script:     /users/georgerfurt/securesystems/gnat/src/elections_test.ts
+  -- File:       /users/georgerfurt/securesystems/gnat/src/vectors_test.adb
+  -- Script:     /users/georgerfurt/securesystems/gnat/src/vectors_test.ts
 
 
 with Ada.Command_Line, Ada.Exceptions;
 use type Ada.Command_Line.Exit_Status;
 
-with Ada.Text_IO; use Ada.Text_IO;
-with Elections; use Elections;
+with Ada.Numerics.Elementary_Functions; 
+with Ada.Text_IO;
+with Vectors;
+use Ada.Numerics.Elementary_Functions; 
+use Ada.Text_IO;
+use Vectors;
 
-procedure elections_test is
+procedure vectors_test is
 
   package Driver_Internals is
     -- Global Data
@@ -56,12 +60,15 @@ procedure elections_test is
 
 begin  -- unit main block
 
-  -- Test Case (1)   Test Init
+  -- Test Case (1)   Test Add
   declare
-    Voters : constant Natural := 10;
+    L: constant Vector := (2.0, 3.0, 4.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Vector;
+    Expected: constant Vector := (L.X + R.X, L.Y + R.Y, L.Z + R.Z);
   begin  -- test case
     begin  -- test part
-      Initialize (Voters);
+      Actual := L + R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -69,25 +76,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Elections.Votes_Distribution = Elections.Zero_Votes_Distribution and then
-           	Elections.Num_Total_Voters = Voters and then
-           	Elections.Num_Votes_Made = 0
+        if abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(1)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(1)  Test Init");
-          Put_Line ("           Script name:'elections_test.ts'; Line:5 ");
+          Put_Line ("(1)  Test Add");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:9 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(1)  Test Init");
-        Put_Line ("           Script name:'elections_test.ts'; Line:5 ");
+        Put_Line ("(1)  Test Add");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:9 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -101,13 +106,15 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
-  -- Test Case (2)   Test Vote
+  -- Test Case (2)   Test Substract
   declare
-    Voted_Party : constant Party := C;
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Vector;
+    Expected: constant Vector := (L.X - R.X, L.Y - R.Y, L.Z - R.Z);
   begin  -- test case
     begin  -- test part
-      Elections.Num_Total_Voters := 3;
-      	Vote_For (Voted_Party);
+      Actual := L - R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -115,27 +122,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Elections.Votes_Distribution(None) = 0 and then
-           	Elections.Votes_Distribution(A) = 0 and then
-           	Elections.Votes_Distribution(B) = 0 and then
-           	Elections.Votes_Distribution(C) = 1 and then
-           	Elections.Votes_Distribution(D) = 0 
+        if abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(2)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(2)  Test Vote");
-          Put_Line ("           Script name:'elections_test.ts'; Line:12 ");
+          Put_Line ("(2)  Test Substract");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:17 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(2)  Test Vote");
-        Put_Line ("           Script name:'elections_test.ts'; Line:12 ");
+        Put_Line ("(2)  Test Substract");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:17 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -149,16 +152,15 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
-  -- Test Case (3)   Test All_Voters_Voted false
+  -- Test Case (3)   Test Multiply
   declare
-    Voted_Party : constant Party := C;
-    	Actual : Boolean;
-    	Expected: constant Boolean := False;
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: float := 3.0;
+    Actual: Vector;
+    Expected: constant Vector := (L.X * R, L.Y * R, L.Z * R);
   begin  -- test case
     begin  -- test part
-      Elections.Num_Total_Voters := 3;
-      	Elections.Num_Votes_Made := 2;
-      	Actual := All_Voters_Voted;
+      Actual := L * R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -166,23 +168,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Actual = Expected 
+        if abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(3)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(3)  Test All_Voters_Voted false");
-          Put_Line ("           Script name:'elections_test.ts'; Line:22 ");
+          Put_Line ("(3)  Test Multiply");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:25 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(3)  Test All_Voters_Voted false");
-        Put_Line ("           Script name:'elections_test.ts'; Line:22 ");
+        Put_Line ("(3)  Test Multiply");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:25 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -196,16 +198,15 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
-  -- Test Case (4)   Test All_Voters_Voted true
+  -- Test Case (4)   Test Scalar
   declare
-    Voted_Party : constant Party := C;
-    	Actual : Boolean;
-    	Expected: constant Boolean := True;
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Float;
+    Expected: Float := (L.X * R.X + L.Y * R.Y + L.Z * R.Z);
   begin  -- test case
     begin  -- test part
-      Elections.Num_Total_Voters := 3;
-      	Elections.Num_Votes_Made := 3;
-      	Actual := All_Voters_Voted;
+      Actual := L * R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -213,23 +214,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Actual = Expected 
+        if abs(Actual - Expected) < 0.000001
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(4)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(4)  Test All_Voters_Voted true");
-          Put_Line ("           Script name:'elections_test.ts'; Line:31 ");
+          Put_Line ("(4)  Test Scalar");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:33 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(4)  Test All_Voters_Voted true");
-        Put_Line ("           Script name:'elections_test.ts'; Line:31 ");
+        Put_Line ("(4)  Test Scalar");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:33 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -243,19 +244,15 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
-  -- Test Case (5)   Test Find Winner unique
+  -- Test Case (5)   Test Equality
   declare
-    Actual : Party;
-    	Expected: constant Party := C;
+    L: constant Vector := (2.0, 1.0, 0.0);
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Boolean;
+    Expected: Boolean := True;
   begin  -- test case
     begin  -- test part
-      Elections.Num_Total_Voters := 5;
-      	Elections.Num_Votes_Made := 5;
-      	Elections.Votes_Distribution(A) := 1;
-      	Elections.Votes_Distribution(B) := 1;
-      	Elections.Votes_Distribution(C) := 2;
-      	Elections.Votes_Distribution(D) := 1;
-      	Actual := Find_Winner;
+      Actual := L = R;
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -263,23 +260,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Actual = Expected 
+        if Actual = Expected
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(5)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(5)  Test Find Winner unique");
-          Put_Line ("           Script name:'elections_test.ts'; Line:40 ");
+          Put_Line ("(5)  Test Equality");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:41 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(5)  Test Find Winner unique");
-        Put_Line ("           Script name:'elections_test.ts'; Line:40 ");
+        Put_Line ("(5)  Test Equality");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:41 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -293,19 +290,15 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
-  -- Test Case (6)   Test Find Winner none
+  -- Test Case (6)   Test Orthogonal
   declare
-    Actual : Party;
-    	Expected: constant Party := None;
+    L: constant Vector := (2.0, 1.0, 0.0);
+    R: constant Vector := (3.0, -6.0, 8.0);
+    Actual: Boolean;
+    Expected: Boolean := True;
   begin  -- test case
     begin  -- test part
-      Elections.Num_Total_Voters := 5;		
-      	Elections.Num_Votes_Made := 5;
-      	Elections.Votes_Distribution(A) := 0;
-      	Elections.Votes_Distribution(B) := 2;
-      	Elections.Votes_Distribution(C) := 2;
-      	Elections.Votes_Distribution(D) := 1;
-      	Actual := Find_Winner;
+      Actual := Are_Orthogonal(L,R);
       Driver_Internals.Set_Path ("=>");
     exception
       when E: others =>
@@ -313,23 +306,23 @@ begin  -- unit main block
     end;  -- test part
     begin  -- result part
       if Driver_Internals.Path_Was ("=>") then
-        if Actual = Expected 
+        if Actual = Expected
         then
           Driver_Internals.Test_Case_Passed := True;
           Put_Line ("(6)  pass.");
         else
           Driver_Internals.Test_Case_Passed := False;
           Driver_Internals.Fail_Result := True;
-          Put_Line ("(6)  Test Find Winner none");
-          Put_Line ("           Script name:'elections_test.ts'; Line:52 ");
+          Put_Line ("(6)  Test Orthogonal");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:49 ");
           Put_Line ("      ...FAIL.");
           Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
         end if;
       else
         Driver_Internals.Test_Case_Passed := False;
         Driver_Internals.Fail_Result := True;
-        Put_Line ("(6)  Test Find Winner none");
-        Put_Line ("           Script name:'elections_test.ts'; Line:52 ");
+        Put_Line ("(6)  Test Orthogonal");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:49 ");
         Put_Line ("      ...FAIL.");
         Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
       end if;
@@ -343,9 +336,146 @@ begin  -- unit main block
     end;  -- result part
   end;  -- test case
 
+  -- Test Case (7)   Test CrossProduct
+  declare
+    L: constant Vector := (10.0, 12.0, 8.0);
+    R: constant Vector := (5.0, 6.0, 7.0);
+    Actual: Vector;
+    Expected: constant Vector := (L.Y * R.Z - L.Z * R.Y, L.Z * R.X - L.X * R.Z, L.X * R.Y - L.Y * R.X);
+  begin  -- test case
+    begin  -- test part
+      Actual := Cross_Product(L,R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual.X - Expected.X) < 0.000001 and then abs(Actual.Y - Expected.Y) < 0.000001 and then abs(Actual.Z - Expected.Z) < 0.000001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(7)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(7)  Test CrossProduct");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:57 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(7)  Test CrossProduct");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:57 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 7.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (8)   Test Distance
+  declare
+    L: constant Vector := (1.0, 1.0, 0.0);
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Float;
+    Expected: Float := 1.0;
+  begin  -- test case
+    begin  -- test part
+      Actual := Distance(L, R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual - Expected) < 0.000001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(8)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(8)  Test Distance");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:65 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(8)  Test Distance");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:65 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 8.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
+  -- Test Case (9)   Test Distance_To_Origin
+  declare
+    R: constant Vector := (2.0, 1.0, 0.0);
+    Actual: Float;
+    Expected: Float := 2.23607;
+  begin  -- test case
+    begin  -- test part
+      Actual := Distance_To_Origin(R);
+      Driver_Internals.Set_Path ("=>");
+    exception
+      when E: others =>
+        Driver_Internals.Set_Path (Ada.Exceptions.Exception_Name (E));
+    end;  -- test part
+    begin  -- result part
+      if Driver_Internals.Path_Was ("=>") then
+        if abs(Actual - Expected) < 0.001
+        then
+          Driver_Internals.Test_Case_Passed := True;
+          Put_Line ("(9)  pass.");
+        else
+          Driver_Internals.Test_Case_Passed := False;
+          Driver_Internals.Fail_Result := True;
+          Put_Line ("(9)  Test Distance_To_Origin");
+          Put_Line ("           Script name:'vectors_test.ts'; Line:74 ");
+          Put_Line ("      ...FAIL.");
+          Put_Line ("         (" & "path `=>' was taken, but predicate is FALSE" & ")");
+        end if;
+      else
+        Driver_Internals.Test_Case_Passed := False;
+        Driver_Internals.Fail_Result := True;
+        Put_Line ("(9)  Test Distance_To_Origin");
+        Put_Line ("           Script name:'vectors_test.ts'; Line:74 ");
+        Put_Line ("      ...FAIL.");
+        Put_Line ("         (" & "path `" & Driver_Internals.Taken_Path & "' when `=>' was expected" & ")");
+      end if;
+    exception
+      when Driver_Internals.Program_Terminate =>
+        raise;
+      when E: others =>
+        Driver_Internals.Unexpected_Error := True;
+        Put_Line ("ERROR: exception " & Ada.Exceptions.Exception_Name (E) & " raised in result part of test case 9.");
+        raise Driver_Internals.Program_Terminate;
+    end;  -- result part
+  end;  -- test case
+
   --  End of test cases
   New_Line;
-  Put ("Script name 'elections_test.ts'");
+  Put ("Script name 'vectors_test.ts'");
   Put ("; total test result: ");
   if Driver_Internals.Fail_Result then
     Put ("FAIL");
@@ -385,4 +515,4 @@ exception
     Driver_Internals.Status := -1;
     Ada.Command_Line.Set_Exit_Status (Driver_Internals.Status);
 
-end elections_test;
+end vectors_test;

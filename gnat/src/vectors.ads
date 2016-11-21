@@ -88,9 +88,9 @@ package Vectors is
                   and then Left.Y * Right.Z + Left.Z * Right.Y >= Float'First
                   and then Left.Z * Right.X + Left.X * Right.Z >= Float'First
                   and then Left.X * Right.Y + Left.Y * Right.X >= Float'First),
-          Post => (Cross_Product'Result.X = Left.Y * Right.Z + Left.Z * Right.Y
-                   and then Cross_Product'Result.Y = Left.Z * Right.X + Left.X * Right.Z
-                   and then Cross_Product'Result.Z = Left.X * Right.Y + Left.Y * Right.X);
+          Post => (Cross_Product'Result.X = Left.Y * Right.Z - Left.Z * Right.Y
+                   and then Cross_Product'Result.Y = Left.Z * Right.X - Left.X * Right.Z
+                   and then Cross_Product'Result.Z = Left.X * Right.Y - Left.Y * Right.X);
 
    --  Computes the distance between both vectors.
    function Distance (Left : Vector; Right : Vector) return Float

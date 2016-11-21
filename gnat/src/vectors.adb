@@ -6,9 +6,7 @@ package body Vectors is
    function "+" (Left : Vector; Right : Vector) return Vector is
       Sum : Vector;
    begin
-      Sum.X := Left.X + Right.X;
-      Sum.Y := Left.Y + Right.Y;
-      Sum.Z := Left.Z + Right.Z;
+      Sum := (Left.X + Right.X, Left.Y + Right.Y, Left.Z + Right.Z);
 
       return Sum;
    end;
@@ -17,9 +15,7 @@ package body Vectors is
    function "-" (Left : Vector; Right : Vector) return Vector is
       Difference : Vector;
    begin
-      Difference.X := Left.X - Right.X;
-      Difference.Y := Left.Y - Right.Y;
-      Difference.Z := Left.Z - Right.Z;
+      Difference := (Left.X - Right.X, Left.Y - Right.Y, Left.Z - Right.Z);
 
       return Difference;
    end;
@@ -28,9 +24,7 @@ package body Vectors is
    function "*" (Left : Vector; Right : Float) return Vector is
       Product : Vector;
    begin
-      Product.X := Left.X * Right;
-      Product.Y := Left.Y * Right;
-      Product.Z := Left.Z * Right;
+      Product := (Left.X * Right, Left.Y * Right, Left.Z * Right);
 
       return Product;
    end;
@@ -64,9 +58,9 @@ package body Vectors is
    function Cross_Product (Left : Vector; Right : Vector) return Vector is
       Product : Vector;
    begin
-      Product.X := Left.Y * Right.Z + Left.Z * Right.Y;
-      Product.Y := Left.Z * Right.X + Left.X * Right.Z;
-      Product.Z := Left.X * Right.Y + Left.Y * Right.X;
+      Product := (Left.Y * Right.Z - Left.Z * Right.Y,
+                  Left.Z * Right.X - Left.X * Right.Z,
+                  Left.X * Right.Y - Left.Y * Right.X);
 
       return Product;
    end;
