@@ -26,15 +26,15 @@ RN
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U elections%b		elections.adb		c4c11fa3 NE OO PK
+U elections%b		elections.adb		0da6dd04 NE OO PK
 W interfaces%s		interfac.ads		interfac.ali
 W system.assertions%s	s-assert.adb		s-assert.ali
 
-U elections%s		elections.ads		d89a65ee EE NE OO PK
+U elections%s		elections.ads		11fda749 EE NE OO PK
 
 D ada.ads		20160516092928 3ffc8e18 ada%s
 D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
-D elections.ads		20161121103916 d89a65ee elections%s
+D elections.ads		20161121113830 11fda749 elections%s
 D elections.adb		20161121103814 1c5b7a4d elections%b
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D system.ads		20160516092930 2da59038 system%s
@@ -42,25 +42,25 @@ D s-assert.ads		20160516092930 cd8d2c94 system.assertions%s
 D s-exctab.ads		20160516092930 54135002 system.exception_table%s
 D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
 X 3 elections.ads
-1K9*Elections 32l5 32e14 4|1b14 42l5 42t14
-2E9*Party 2e36 3r31 17r31 20r27 20r56 30r32 4|12r31 25r32 27r16
-2n19*None{2E9} 4|27r25 34r23
+1K9*Elections 35l5 35e14 4|1b14 42l5 42t14
+2E9*Party 2e36 3r31 18r31 33r32 4|12r31 25r32 27r16
+2n19*None{2E9} 19r22 4|27r25 34r23
 2n25*A{2E9}
 2n28*B{2E9}
 2n31*C{2E9}
 2n34*D{2E9}
 3A9*Votes_Array(natural)<2E9> 5r39 6r30
-5a4*Zero_Votes_Distribution{3A9} 6r54 15r38 4|9r29
-6a4*Votes_Distribution{3A9} 15r17 20r7 20r36 4|9m7 15m7 15r36 26r28 26r48
-. 29r16 30r13 31r24 33r16
-7i4*Num_Votes_Made{natural} 14r8 24r9 25r9 4|8m7 14m7 14r25 20r14
-8i4*Num_Total_Voters{natural} 24r26 25r26 4|7m7 20r31
+5a4*Zero_Votes_Distribution{3A9} 6r54 16r38 4|9r29
+6a4*Votes_Distribution{3A9} 16r17 4|9m7 15m7 15r36 26r28 26r48 29r16 30r13
+. 31r24 33r16
+7i4*Num_Votes_Made{natural} 14r8 20r23 27r9 28r9 4|8m7 14m7 14r25 20r14
+8i4*Num_Total_Voters{natural} 15r17 20r40 27r26 28r26 4|7m7 20r31
 12U14*Initialize 12>26 4|5b14 10t7
-12i26 Num_Voters{natural} 4|5b26 7r27
-17U14*Vote_For 17>24 4|12b14 16t7
-17e24 Vote{2E9} 4|12b24 15r27 15r56
-22V13*All_Voters_Voted{boolean} 24r52 26r22 4|18b13 21t7
-30V13*Find_Winner{2E9} 4|25b13 40t7
+12i26 Num_Voters{natural} 15r36 4|5b26 7r27
+18U14*Vote_For 18>24 4|12b14 16t7
+18e24 Vote{2E9} 19r14 4|12b24 15r27 15r56
+25V13*All_Voters_Voted{boolean} 27r52 29r22 4|18b13 21t7
+33V13*Find_Winner{2E9} 4|25b13 40t7
 X 4 elections.adb
 26i7 Maximum{natural} 30r38 31m13 33r41
 27e7 Winner{3|2E9} 32m13 34m13 38r14

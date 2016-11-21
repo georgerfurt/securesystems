@@ -12,12 +12,15 @@ package Elections is
    procedure Initialize (Num_Voters : Natural) with
       Post =>
       (Num_Votes_Made = 0
+       and then Num_Total_Voters = Num_Voters
        and then Votes_Distribution = Zero_Votes_Distribution);
 
    procedure Vote_For (Vote : Party) with
-      Post =>
-      ( -- Votes_Distribution(Party) = Votes_Distribution'Old (Party) + 1 and then
-      Votes_Distribution (Party) = Votes_Distribution (Party)'Old);
+     Pre => (Vote /= None
+             and then Num_Votes_Made < Num_Total_Voters);
+
+--       Post =>
+--        (Votes_Distribution(Party) = Votes_Distribution (Party)'Old + 1);
 
    function All_Voters_Voted return Boolean with
       Post =>

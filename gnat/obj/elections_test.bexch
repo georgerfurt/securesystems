@@ -1,16 +1,15 @@
 [GENERATED OBJECT FILE]
-b__main.o
+b__elections_test.o
 [PROJECT FILES]
 C:\Workspaces\Git\securesystems\gnat\assignment2.gpr
 20161121112812
 [BOUND OBJECT FILES]
 C:\Workspaces\Git\securesystems\gnat\obj\elections.o
-C:\Workspaces\Git\securesystems\gnat\obj\vectors.o
-C:\Workspaces\Git\securesystems\gnat\obj\main.o
+C:\Workspaces\Git\securesystems\gnat\obj\elections_test.o
 [GENERATED SOURCE FILES]
-b__main.ads
-b__main.adb
-b__main.ali
+b__elections_test.ads
+b__elections_test.adb
+b__elections_test.ali
 [RESULTING OPTIONS]
 -LC:\Workspaces\Git\securesystems\gnat\obj\
 -LC:\Workspaces\Git\securesystems\gnat\obj\

@@ -1,0 +1,137 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnatA
+A -gnatws
+A -gnat12
+A -gnato
+A -gnata
+A -mtune=generic
+A -march=pentium4
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U elections_test%b	elections_test.adb	45fe8958 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W elections%s		elections.adb		elections.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-comlin.ads		20160516092930 ea62afbc ada.command_line%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D elections.ads		20161121113830 11fda749 elections%s
+D elections_test.adb	20161121115230 af1566ac elections_test%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca3.ads		20160516092932 0b705ca5 system.concat_3%s
+D s-conca4.ads		20160516092930 7e642b20 system.concat_4%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-secsta.ads		20160516092930 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 10|10r6 10r24 11r10 13r6 13r23 23r29 68r36 99r41 114r36 147r41
+. 165r36 194r41 212r3 233r5 236r41 239r5
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 10|10w10 11r14 23r33 212r7 233r9 239r9
+65I9*Exit_Status<integer> 10|11r27 23r46
+70U14*Set_Exit_Status 10|212s20 233s22 239s22
+X 3 a-except.ads
+54K13*Exceptions 349e19 10|10w28 68r40 99r45 114r40 147r45 165r40 194r45
+. 236r45
+72V13*Exception_Name{string} 10|68s51 99s56 114s51 147s56 165s51 194s56 236s56
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|13w10 13r27
+166U14*New_Line 10|200s3 211s3 216s5 232s5 235s5
+242U14*Put 10|201s3 202s3 204s5 207s5 217s5 219s7 222s7
+263U14*Put_Line 10|77s11 81s11 82s11 83s11 84s11 89s9 90s9 91s9 92s9 99s9
+. 125s11 129s11 130s11 131s11 132s11 137s9 138s9 139s9 140s9 147s9 172s11
+. 176s11 177s11 178s11 179s11 184s9 185s9 186s9 187s9 194s9 210s3 226s7 227s7
+. 230s7 236s5 237s5
+X 9 elections.ads
+1K9*Elections 35e14 10|14w6 14r21 72r12 72r43 73r17 74r17 109r7 118r12 119r17
+. 120r17 121r17 122r17 159r7 160r9
+2E9*Party 2e36 10|106r28 154r28
+2n19*None{2E9} 10|118r41
+2n25*A{2E9} 10|119r46
+2n28*B{2E9} 10|120r46
+2n31*C{2E9} 10|106r37 121r46 154r37
+2n34*D{2E9} 10|122r46
+3A9*Votes_Array(natural)<2E9>
+5a4*Zero_Votes_Distribution{3A9} 10|72r53
+6a4*Votes_Distribution{3A9} 10|72r22 118r22 119r27 120r27 121r27 122r27
+7i4*Num_Votes_Made{natural} 10|74r27 160m19
+8i4*Num_Total_Voters{natural} 10|73r27 109m17 159m17
+12U14*Initialize 10|64s7
+18U14*Vote_For 10|110s9
+25V13*All_Voters_Voted{boolean} 10|161s19
+X 10 elections_test.adb
+16U11*elections_test 16b11 241l5 241t19
+18K11 Driver_Internals 32l7 32e23 34b16 55l7 55t23 65r7 68r9 71r10 76r11
+. 79r11 80r11 87r9 88r9 92r45 95r12 98r9 100r15 111r7 114r9 117r10 124r11
+. 127r11 128r11 135r9 136r9 140r45 143r12 146r9 148r15 162r7 165r9 168r10
+. 171r11 174r11 175r11 182r9 183r9 187r45 190r12 193r9 195r15 203r6 205r5
+. 208r5 212r37 215r8 218r8 220r7 223r7 225r8 228r7 233r39 238r5 239r39
+20X5 Program_Terminate 95r29 100r32 143r29 148r32 190r29 195r32 215r25
+21b5 Fail_Result{boolean} 80m28 88m26 128m28 136m26 175m28 183m26 203r23
+. 218r25
+22b5 Unexpected_Error{boolean} 98m26 146m26 193m26 225r25
+23i5 Status{2|65I9} 205m22 208m22 212r54 220m24 223m24 228m24 233r56 238m22
+. 239r56
+25b5 Test_Case_Passed{boolean} 52r20 54r24 76m28 79m28 87m26 124m28 127m28
+. 135m26 171m28 174m28 182m26
+27U15 Set_Path 27>25 39b15 43l11 43t19 65s24 68s26 111s24 114s26 162s24 165s26
+27a25 Path{string} 39b25 41r47 41r63 42r34
+28V14 Path_Was{boolean} 28>24 44b14 48l11 48t19 71s27 117s27 168s27
+28a24 Path{string} 44b24 46r40 47r41 47r56
+29V14 Taken_Path{string} 49b14 50l67 50t77 92s62 140s62 187s62
+30V14 Passed{boolean} 51b14 52l42 52t48
+31V14 Failed{boolean} 53b14 54l46 54t52
+36a5 Test_Case_Path{string} 41m9 41r25 47r22 50r20
+37i5 Test_Case_Path_Length{natural} 42m9 46r16 50r39
+61i5 Voters{natural} 64r19 73r46
+67r12 E{3|63R9} 68r67
+97r12 E{3|63R9} 99r72
+106e5 Voted_Party{9|2E9} 110r19
+113r12 E{3|63R9} 114r67
+145r12 E{3|63R9} 147r72
+154e5 Voted_Party{9|2E9}
+155b9 Actual{boolean} 161m9 169r12
+156b9 Expected{boolean} 169r21
+164r12 E{3|63R9} 165r67
+192r12 E{3|63R9} 194r72
+234r8 E{3|63R9} 236r72
+

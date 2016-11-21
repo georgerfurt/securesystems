@@ -29,7 +29,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		fa4b5951 NE OO SU
+U main%b		main.adb		332c9bf6 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
@@ -48,7 +48,7 @@ D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
 D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
 D a-tiflio.ads		20160516092926 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
-D elections.ads		20161121103916 d89a65ee elections%s
+D elections.ads		20161121113830 11fda749 elections%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
 D main.adb		20161121102218 9dc60363 main%b
@@ -83,7 +83,7 @@ X 10 a-tiflio.ads
 71i7 Aft{9|73I12} 15|53r45[3|20] 59r37[3|20] 78r55[3|20] 84r55[3|20]
 72i7 Exp{9|73I12} 15|53r55[3|20] 59r47[3|20] 78r65[3|20] 84r65[3|20]
 X 12 elections.ads
-1K9*Elections 32e14 15|12w6 12r21
+1K9*Elections 35e14 15|12w6 12r21
 12U14*Initialize 15|95s4
 X 15 main.adb
 14U11*Main 14b11 97l5 97t9

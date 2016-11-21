@@ -2,11 +2,12 @@ project Assignment2 is
 
    for Source_Dirs use ("src");
    for Object_Dir use "obj";
-   for Main use ("main.adb", "vectors_test.adb");
+   for Main use ("elections_test.adb", "main.adb", "vectors_test.adb");
 
    package Compiler is
       for Default_Switches ("ada") use ("-gnatwae", "-gnat12", "-gnato", "-gnata", "-gnatyabBCikIStuxsr");
       for Switches ("vectors_test.adb") use ("-gnat12", "-gnato", "-gnata");
+      for Switches ("elections_test.adb") use ("-gnatws", "-gnat12", "-gnato", "-gnata");
    end Compiler;
 
 end Assignment2;
