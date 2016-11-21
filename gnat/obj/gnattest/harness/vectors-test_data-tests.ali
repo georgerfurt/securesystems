@@ -1,0 +1,268 @@
+V "GNAT Lib v2016"
+A -mmacosx-version-min=10.11.0
+A -gnatA
+A -g
+A -gnatyM0
+A -gnata
+A -gnat12
+A -mtune=core2
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U vectors.test_data.tests%b  vectors-test_data-tests.adb  c6ffce99 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.tags%s		a-tags.adb		a-tags.ali
+W aunit%s		aunit.adb		aunit.ali
+W aunit.assertions%s	aunit-assertions.adb	aunit-assertions.ali
+W system%s		system.ads		system.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W vectors.test_data%s	vectors-test_data.adb	vectors-test_data.ali
+
+U vectors.test_data.tests%s  vectors-test_data-tests.ads  4cd937cb EE OO PF PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W gnattest_generated%s	gnattest_generated.ads	gnattest_generated.ali
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W vectors.test_data%s	vectors-test_data.adb	vectors-test_data.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-calend.ads		20160516092931 2d5f01d4 ada.calendar%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-finali.ads		20160516092931 bf4f806b ada.finalization%s
+D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
+D a-numaux.ads		20160516092931 243fe0b7 ada.numerics.aux%s
+D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20160516092929 5e96a931 ada.numerics.generic_elementary_functions%b
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D ada_containers.ads	20160516092006 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20160516092006 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20160516092006 76cdf7c6 aunit%s
+D aunit-assertions.ads	20160516092006 b7f9ecd6 aunit.assertions%s
+D aunit-test_fixtures.ads  20160516092006 faadeab5 aunit.test_fixtures%s
+D aunit-test_results.ads  20160516092006 171847c9 aunit.test_results%s
+D aunit-tests.ads	20160516092006 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20160516092006 a8b9fbfb aunit.time_measure%s
+D gnat.ads		20160516092933 fd2ad2f1 gnat%s
+D g-souinf.ads		20160516092932 291df751 gnat.source_info%s
+D gnattest_generated.ads  20161121084403 33489ddc gnattest_generated%s
+D system.ads		20160516092931 c3282aa7 system%s
+D s-assert.ads		20160516092931 cd8d2c94 system.assertions%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-exnllf.ads		20160516092931 bc7ebbdc system.exn_llf%s
+D s-fatflt.ads		20160516092930 11beb392 system.fat_flt%s
+D s-fatgen.ads		20160516092933 49cbaf86 system.fat_gen%s
+D s-finmas.ads		20160516092931 7811a767 system.finalization_masters%s
+D s-finroo.ads		20160516092931 4ff27390 system.finalization_root%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20160516092927 ede33ef8 system.pool_global%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20160516092930 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20160516092928 b16154c2 system.storage_pools%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D vectors.ads		20161121083526 fbe81cda vectors%s
+D vectors-test_data.ads	20161120232814 106fcdf5 vectors.test_data%s
+D vectors-test_data-tests.ads  20161121065644 6ffe67e2 vectors.test_data.tests%s
+D vectors-test_data-tests.adb  20161121083700 6b88a27f vectors.test_data.tests%b
+D /users/georgerfurt/securesystems/gnat/obj/gnattest/harness/suppress.adc  20161121084403 00000000
+X 1 ada.ads
+16K9*Ada 19e8 43|8r6 234r30 265r30
+X 5 a-numeri.ads
+16K13*Numerics 32e17 43|8r10 234r34 265r34
+X 7 a-ngelfu.ads
+39k22*Generic_Elementary_Functions 170e46 43|8w19 234r43 265r43
+42V13 Sqrt{float} 43|241s32[234] 272s32[265]
+X 13 ada_containers-aunit_lists.ads
+53R9*Cursor
+X 14 aunit.ads
+34K9*AUnit 48e10 43|9r6 9r28 28r10 62r10 96r10 126r10 152r10 181r10 209r10
+. 240r10 271r10 301r7
+X 15 aunit-assertions.ads
+44K15*Assertions 155e21 43|9w12 9r34 28r16 62r16 96r16 126r16 152r16 181r16
+. 209r16 240r16 271r16 301r13
+48U14*Assert 43|28s27 62s27 96s27 126s27 152s27 181s27 209s27 240s27 271s27
+. 301s24
+101U14*Init_Test
+104U14*Clear_Failures
+107V13*Has_Failures{boolean}
+110R9*Failure_Iter<13|53R9[145]>
+113V13*First_Failure{110R9}
+X 22 gnattest_generated.ads
+1K9*Gnattest_Generated 4e23 42|5w6 9r21
+2K12*GNATtest_Standard=2:38 42|9r40
+X 23 system.ads
+37K9*System 174e11 43|10r6
+X 24 s-assert.ads
+41K16*Assertions 50e22 43|10w13
+X 40 vectors.ads
+3K9*Vectors 115e12 42|7r9 9r58 42r5 43|12r14 309r5
+6R9*Vector 10e14 43|23r47 24r19 57r51 58r19 91r47 92r19 121r53 149r44 177r49
+. 204r52 205r19 233r47 264r50
+7f7*X{float} 43|29r25 29r35 29r45 63r25 63r35 63r45 97r25 97r34 127r33 127r43
+. 153r23 153r33 182r28 182r38 210r25 211r45 211r54 212r35 212r64 241r44 241r54
+. 241r65 241r75 272r44 272r55
+8f7*Y{float} 43|30r25 30r35 30r45 64r25 64r35 64r45 98r25 98r34 127r52 127r62
+. 154r23 154r33 182r47 182r57 210r35 210r64 211r25 212r45 212r54 242r21 242r31
+. 242r42 242r52 273r21 273r32
+9f7*Z{float} 43|31r25 31r35 31r45 65r25 65r35 65r45 99r25 99r34 127r71 127r81
+. 155r23 155r33 182r66 182r76 210r45 210r54 211r35 211r64 212r25 243r21 243r31
+. 243r42 243r52 274r21 274r31
+14V14*"+"{6R9} 43|27s25
+26V14*"-"{6R9} 43|61s25
+38V14*"*"{6R9} 43|95s24
+47V14*"*"{float} 43|125s25
+77V13*Are_Orthogonal{boolean} 43|180s20
+84V13*Cross_Product{6R9} 43|208s20
+96V13*Distance{float} 43|239s20
+103V13*Distance_To_Origin{float} 43|270s20
+X 41 vectors-test_data.ads
+8K17*Test_Data 40|3k9 41|28e22 42|7r17 9r66 42r13 43|12r22 309r13
+11R9*Test<16|78R9> 23e14 42|9r76
+16f7*Float_Zero{float} 43|106r49
+20r7*Vec_Zero{40|6R9} 43|38r25 39r25 72r29 73r29
+21r7*Vec_Positive{40|6R9} 43|38r37 40r41 41r25 41r41 72r41 74r45 75r29 75r45
+. 106r33 134r31 162r22 162r38 219r29 219r45 250r25 281r35
+22r7*Vec_Negative{40|6R9} 43|39r37 40r25 42r25 42r41 73r41 74r29 76r29 76r45
+. 134r47 250r41
+25U14*Set_Up<16|80p14>
+26U14*Tear_Down<16|83p14>
+X 42 vectors-test_data-tests.ads
+7K27*Tests 41|8k17 42|42l23 42e28 43|12b32 309l23 309t28
+9R9*Test<41|11R9> 15|101p14 104p14 107p13 113p13 41|25P14 26P14 42|10e20
+. 12p14 12r52 15p14 15r53 18p14 18r56 21p14 21r56 24p14 24r53 27p14 27r62
+. 30p14 30r61 33p14 33r56 36p14 36r66 39p14 39r51 43|16r45 17r52 19r45 35r11
+. 50r46 51r53 53r46 69r11 84r51 85r56 87r51 103r11 114r51 115r56 117r51 131r11
+. 142r46 143r53 145r46 159r11 170r55 171r62 173r55 186r11 197r54 198r61 200r54
+. 216r11 227r49 228r56 230r49 247r11 258r59 259r66 261r59 278r11 290r44 291r51
+. 293r44
+12U14*Test_Plus_685267 12=32 43|17b14
+12r32 Gnattest_T{9R9} 43|17b32
+15U14*Test_Minus_2a1ebe 15=33 43|51b14
+15r33 Gnattest_T{9R9} 43|51b33
+18U14*Test_Multiply_5b4755 18=36 43|85b14
+18r36 Gnattest_T{9R9} 43|85b36
+21U14*Test_Multiply_beba9c 21=36 43|115b14
+21r36 Gnattest_T{9R9} 43|115b36
+24U14*Test_Equal_49fd3e 24=33 43|143b14
+24r33 Gnattest_T{9R9} 43|143b33
+27U14*Test_Are_Orthogonal_b1a358 27=42 43|171b14
+27r42 Gnattest_T{9R9} 43|171b42
+30U14*Test_Cross_Product_e31fc4 30=41 43|198b14
+30r41 Gnattest_T{9R9} 43|198b41
+33U14*Test_Distance_d6226c 33=36 43|228b14
+33r36 Gnattest_T{9R9} 43|228b36
+36U14*Test_Distance_To_Origin_c0eb3b 36=46 43|259b14
+36r46 Gnattest_T{9R9} 43|259b46
+39U14*Test_Put_ce4f36 39=31 43|291b14
+39r31 Gnattest_T{9R9} 43|291b31
+X 43 vectors-test_data-tests.adb
+16U14 Test_Plus 16=25 17r66 19b14 45l8 45t17
+16r25 Gnattest_T{42|9R9} 19b25 35r24
+23U17 Check_Addition 23b17 23>33 23>39 23>55 33t10 38s7 39s7 40s7 41s7 42s7
+23r33 Left{40|6R9} 27r20 29r30 30r30 31r30
+23r39 Right{40|6R9} 27r27 29r39 30r39 31r39
+23a55 Complaint{string} 32r13
+24r10 Result{40|6R9} 27m10 29r18 30r18 31r18
+25f10 Epsilon{float} 29r51 30r51 31r51
+35r7 T=35:24{42|9R9} 38r23 38r35 39r23 39r35 40r23 40r39 41r23 41r39 42r23
+. 42r39
+50U14 Test_Minus 50=26 51r67 53b14 79l8 79t18
+50r26 Gnattest_T{42|9R9} 53b26 69r24
+57U17 Check_Substraction 57b17 57>37 57>43 57>59 67t10 72s7 73s7 74s7 75s7
+. 76s7
+57r37 Left{40|6R9} 61r20 63r30 64r30 65r30
+57r43 Right{40|6R9} 61r27 63r39 64r39 65r39
+57a59 Complaint{string} 66r13
+58r10 Result{40|6R9} 61m10 63r18 64r18 65r18
+59f10 Epsilon{float} 63r51 64r51 65r51
+69r7 T=69:24{42|9R9} 72r27 72r39 73r27 73r39 74r27 74r43 75r27 75r43 76r27
+. 76r43
+84U14 Test_1_Multiply 84=31 85r70 87b14 109l8 109t23
+84r31 Gnattest_T{42|9R9} 87b31 103r24
+91U17 Check_Mult_With_Scalar 91b17 91>41 91>55 91>71 101t10 106s7
+91r41 Vec{40|6R9} 95r20 97r30 98r30 99r30
+91f55 Scalar{float} 95r26 97r38 98r38 99r38
+91a71 Complaint{string} 100r13
+92r10 Result{40|6R9} 95m10 97r18 98r18 99r18
+93f10 Epsilon{float} 97r49 98r49 99r49
+103r7 T=103:24{42|9R9} 106r31 106r47
+114U14 Test_2_Multiply 114=31 115r70 117b14 137l8 137t23
+114r31 Gnattest_T{42|9R9} 117b31 131r24
+121U17 Check_Scalar_Product 121b17 121>39 121>45 121>61 129t10 134s7
+121r39 Left{40|6R9} 125r20 127r28 127r47 127r66
+121r45 Right{40|6R9} 125r27 127r37 127r56 127r75
+121a61 Complaint{string} 128r13
+122f10 Result{float} 125m10 127r18
+123f10 Epsilon{float} 127r87
+131r7 T=131:24{42|9R9} 134r29 134r45
+142U14 Test_Equal 142=26 143r67 145b14 165l8 165t18
+142r26 Gnattest_T{42|9R9} 145b26 159r24
+149U17 Check_Equal 149b17 149>30 149>36 149>52 157t10 162s7
+149r30 Left{40|6R9} 153r18 154r18 155r18
+149r36 Right{40|6R9} 153r27 154r27 155r27
+149a52 Complaint{string} 156r13
+150f10 Epsilon{float} 153r38 154r38 155r38
+159r7 T=159:24{42|9R9} 162r20 162r36
+170U14 Test_Are_Orthogonal 170=35 171r76 173b14 192l8 192t27
+170r35 Gnattest_T{42|9R9} 173b35 186r24
+177U17 Check_Orthogonal 177b17 177>35 177>41 177>57 184t10 189s7
+177r35 Left{40|6R9} 180r36 182r23 182r42 182r61
+177r41 Right{40|6R9} 180r42 182r32 182r51 182r70
+177a57 Complaint{string} 183r13
+178b10 Result{boolean} 180m10 182r13
+186r7 T=186:24{42|9R9}
+197U14 Test_Cross_Product 197=34 198r75 200b14 222l8 222t26
+197r34 Gnattest_T{42|9R9} 200b34 216r24
+204U17 Check_Cross_Product 204b17 204>38 204>44 204>60 214t10 219s7
+204r38 Left{40|6R9} 208r34 210r30 210r49 211r30 211r49 212r30 212r49
+204r44 Right{40|6R9} 208r40 210r39 210r58 211r39 211r58 212r39 212r58
+204a60 Complaint{string} 213r13
+205r10 Result{40|6R9} 208m10 210r18 211r18 212r18
+206f10 Epsilon{float} 210r70 211r70 212r70
+216r7 T=216:24{42|9R9} 219r27 219r43
+227U14 Test_Distance 227=29 228r70 230b14 253l8 253t21
+227r29 Gnattest_T{42|9R9} 230b29 247r24
+233U17 Check_Distance 233b17 233>33 233>39 233>55 245l11 245t25 250s7
+233r33 Left{40|6R9} 239r29 241r39 241r60 242r16 242r37 243r16 243r37
+233r39 Right{40|6R9} 239r35 241r48 241r69 242r25 242r46 243r25 243r46
+233a55 Complaint{string} 244r13
+234K18 Math[7|39] 241r27
+236f10 Result{float} 239m10 241r18
+237f10 Epsilon{float} 243r59
+247r7 T=247:24{42|9R9} 250r23 250r39
+258U14 Test_Distance_To_Origin 258=39 259r80 261b14 285l8 285t31
+258r39 Gnattest_T{42|9R9} 261b39 278r24 282r28
+264U17 Check_Distance_To_Origin 264b17 264>43 264>58 276l11 276t35 281s7
+264r43 Left{40|6R9} 270r39 272r39 272r50 273r16 273r27 274r16 274r26
+264a58 Complaint{string} 275r13
+265K18 Math[7|39] 272r27
+267f10 Result{float} 270m10 272r18
+268f10 Epsilon{float} 274r39
+278r7 T=278:24{42|9R9} 281r33
+290U14 Test_Put 290=24 291r65 293b14 306l8 306t16
+290r24 Gnattest_T{42|9R9} 293b24 297r28
+

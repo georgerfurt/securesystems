@@ -1,0 +1,93 @@
+V "GNAT Lib v2016"
+A -mmacosx-version-min=10.11.0
+A -gnatA
+A -g
+A -gnatyM0
+A -gnata
+A -gnat12
+A -mtune=core2
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U gnattest_main_suite%b	gnattest_main_suite.adb	79aa9fe9 OO PK
+W vectors%s		vectors.adb		vectors.ali
+W vectors.test_data%s	vectors-test_data.adb	vectors-test_data.ali
+W vectors.test_data.tests%s  vectors-test_data-tests.adb  vectors-test_data-tests.ali
+W vectors.test_data.tests.suite%s  vectors-test_data-tests-suite.adb  vectors-test_data-tests-suite.ali
+
+U gnattest_main_suite%s	gnattest_main_suite.ads	eea1e993 EE NE OO PK
+W aunit%s		aunit.adb		aunit.ali
+W aunit.test_suites%s	aunit-test_suites.adb	aunit-test_suites.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-calend.ads		20160516092931 2d5f01d4 ada.calendar%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-finali.ads		20160516092931 bf4f806b ada.finalization%s
+D a-numeri.ads		20160516092928 bb51c45a ada.numerics%s
+D a-ngelfu.ads		20160516092931 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D ada_containers.ads	20160516092006 11329e00 ada_containers%s
+D ada_containers-aunit_lists.ads  20160516092006 d9ebc89a ada_containers.aunit_lists%s
+D aunit.ads		20160516092006 76cdf7c6 aunit%s
+D aunit-assertions.ads	20160516092006 b7f9ecd6 aunit.assertions%s
+D aunit-options.ads	20160516092006 6e5a02a6 aunit.options%s
+D aunit-simple_test_cases.ads  20160516092006 4111c32f aunit.simple_test_cases%s
+D aunit-test_filters.ads  20160516092006 f10b2127 aunit.test_filters%s
+D aunit-test_fixtures.ads  20160516092006 faadeab5 aunit.test_fixtures%s
+D aunit-test_results.ads  20160516092006 171847c9 aunit.test_results%s
+D aunit-test_suites.ads	20160516092006 6821dc24 aunit.test_suites%s
+D aunit-tests.ads	20160516092006 1da11d49 aunit.tests%s
+D aunit-time_measure.ads  20160516092006 a8b9fbfb aunit.time_measure%s
+D gnat.ads		20160516092933 fd2ad2f1 gnat%s
+D g-souinf.ads		20160516092932 291df751 gnat.source_info%s
+D gnattest_generated.ads  20161121084403 33489ddc gnattest_generated%s
+D gnattest_main_suite.ads  20161121084403 868035b7 gnattest_main_suite%s
+D gnattest_main_suite.adb  20161121084403 adc465e1 gnattest_main_suite%b
+D system.ads		20160516092931 c3282aa7 system%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-finmas.ads		20160516092931 7811a767 system.finalization_masters%s
+D s-finroo.ads		20160516092931 4ff27390 system.finalization_root%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20160516092927 ede33ef8 system.pool_global%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20160516092928 b16154c2 system.storage_pools%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D vectors.ads		20161121083526 fbe81cda vectors%s
+D vectors-test_data.ads	20161120232814 106fcdf5 vectors.test_data%s
+D vectors-test_data-tests.ads  20161121065644 6ffe67e2 vectors.test_data.tests%s
+D vectors-test_data-tests-suite.ads  20161121084403 52eecfbf vectors.test_data.tests.suite%s
+D /users/georgerfurt/securesystems/gnat/obj/gnattest/harness/suppress.adc  20161121084403 00000000
+X 12 aunit.ads
+34K9*AUnit 48e10 25|5r6 5r29 26|9r21 11r26
+X 19 aunit-test_suites.ads
+41K15*Test_Suites 86e22 25|5w12 5r35 26|9r27 11r32
+43R9*Test_Suite<20|38R9> 84e14 26|9r39
+44P9*Access_Test_Suite(43R9) 25|9r26 26|11r44
+46U14*Add_Test 26|14s14
+X 25 gnattest_main_suite.ads
+7K9*Gnattest_Main_Suite 11l5 11e24 26|7b14 20l5 20t24
+9V13*Suite{19|44P9} 26|11b13 18l8 18t13
+X 26 gnattest_main_suite.adb
+9r4 Result{19|43R9} 14r7 16m14 16r14
+X 39 vectors.ads
+3K9*Vectors 26|5r6 14r24 39|115e12
+X 40 vectors-test_data.ads
+8K17*Test_Data 26|5r14 14r32 40|28e22
+X 41 vectors-test_data-tests.ads
+7K27*Tests 26|5r24 14r42 41|42e28
+X 42 vectors-test_data-tests-suite.ads
+7K33*Suite 26|5w30 14r48 42|11e34
+9V13*Suite{19|44P9} 26|14s54
+

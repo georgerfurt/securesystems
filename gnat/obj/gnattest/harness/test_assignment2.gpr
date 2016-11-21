@@ -1,0 +1,12 @@
+with "aunit";
+with "gnattest_common.gpr";
+with "../../../assignment2.gpr";
+project test_assignment2 is
+
+   for Source_Dirs use
+     ("../tests",
+      "common");
+
+   package Compiler renames Gnattest_Common.Compiler;
+
+end test_assignment2;

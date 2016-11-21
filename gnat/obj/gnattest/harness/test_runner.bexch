@@ -1,0 +1,33 @@
+[GENERATED OBJECT FILE]
+b__test_runner.o
+[PROJECT FILES]
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/test_driver.gpr
+20161121084403
+/Users/georgerfurt/securesystems/gnat/assignment2.gpr
+20161120090704
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/gnattest_common.gpr
+20161121084403
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/test_assignment2.gpr
+20161121084403
+/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gnat/aunit.gpr
+20160516211652
+[BOUND OBJECT FILES]
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/gnattest_generated.o
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/test_runner.o
+/Users/georgerfurt/securesystems/gnat/obj/vectors.o
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/vectors-test_data.o
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/vectors-test_data-tests.o
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/vectors-test_data-tests-suite.o
+/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/gnattest_main_suite.o
+[GENERATED SOURCE FILES]
+b__test_runner.ads
+b__test_runner.adb
+b__test_runner.ali
+[RESULTING OPTIONS]
+-L/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/
+-L/Users/georgerfurt/securesystems/gnat/obj/gnattest/harness/
+-L/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/aunit/
+-L/Users/georgerfurt/securesystems/gnat/obj/
+-L/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gcc/x86_64-apple-darwin14.5.0/4.9.4/adalib/
+-static
+/users/georgerfurt/downloads/x86_64-darwin/adagpl-2016/gnatgpl/gnat-gpl-2016-x86_64-darwin-bin/lib/gcc/x86_64-apple-darwin14.5.0/4.9.4/adalib/libgnat.a

@@ -1,0 +1,46 @@
+<tests_mapping mode="monolith">
+   <unit source_file="vectors.ads">
+      <test_unit target_file="vectors-test_data-tests.ads">
+         <setup file="vectors-test_data.adb" line="3"  column="4"/>
+         <teardown file="vectors-test_data.adb" line="9"  column="4"/>
+         <tested name="Plus" line="14" column="4">
+            <test file="vectors-test_data-tests.adb" line="14" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Minus" line="26" column="4">
+            <test file="vectors-test_data-tests.adb" line="35" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Multiply" line="38" column="4">
+            <test file="vectors-test_data-tests.adb" line="56" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Multiply" line="47" column="4">
+            <test file="vectors-test_data-tests.adb" line="77" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Equal" line="56" column="4">
+            <test file="vectors-test_data-tests.adb" line="98" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Are_Orthogonal" line="77" column="4">
+            <test file="vectors-test_data-tests.adb" line="119" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Cross_Product" line="84" column="4">
+            <test file="vectors-test_data-tests.adb" line="140" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Distance" line="96" column="4">
+            <test file="vectors-test_data-tests.adb" line="161" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Distance_To_Origin" line="103" column="4">
+            <test file="vectors-test_data-tests.adb" line="182" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <tested name="Put" line="113" column="4">
+            <test file="vectors-test_data-tests.adb" line="203" column="1" timestamp="2016-11-21 08:44:03"/>
+         </tested>
+         <dangling>
+         </dangling>
+      </test_unit>
+      <test_unit target_file="vectors-test_data-tests-math-test_data-tests.ads">
+         <setup file="vectors-test_data-tests-math-test_data.adb" line="3"  column="4"/>
+         <teardown file="vectors-test_data-tests-math-test_data.adb" line="9"  column="4"/>
+         <dangling>
+         </dangling>
+      </test_unit>
+   </unit>
+</tests_mapping>
