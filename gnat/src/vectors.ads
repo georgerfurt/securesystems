@@ -9,6 +9,7 @@ package Vectors is
       Z : Float := 0.0;
    end record;
 
+   Epsilon : Float := 0.0001;
    --  Adds two vectors dimension-wise.
    function "+" (Left : Vector; Right : Vector) return Vector
      with Pre  => (Left.X <= Float'Last - Right.X
@@ -35,24 +36,18 @@ package Vectors is
 
    --  Multiplies all dimensions of Left by Right.
    function "*" (Left : Vector; Right : Float) return Vector
-     with Pre  => (Left.X <= Float'Last / Right
-                   and then Left.Y <= Float'Last / Right
-                   and then Left.Z <= Float'Last / Right
-                   and then Left.X >= Float'First / Right
-                   and then Left.Y >= Float'First / Right
-                   and then Left.Z >= Float'First / Right),
+     with Pre  => (         (Right = 0.0 or Left.X <= abs (Float'Last / Right))
+                   and then (Right = 0.0 or Left.Y <= abs (Float'Last / Right))
+                   and then (Right = 0.0 or Left.Z <= abs (Float'Last / Right))),
           Post => ("*"'Result.X = Left.X * Right
                    and then "*"'Result.Y = Left.Y * Right
                    and then "*"'Result.Z = Left.Z * Right);
 
    --  Computes the scalar product.
    function "*" (Left : Vector; Right : Vector) return Float
-     with Pre  => (Left.X <= Float'Last / Right.X
-                   and then Left.Y <= Float'Last / Right.Y
-                   and then Left.Z <= Float'Last / Right.Z
-                   and then Left.X >= Float'First / Right.X
-                   and then Left.Y >= Float'First / Right.Y
-                   and then Left.Z >= Float'First / Right.Z),
+     with Pre  => (         (Right.X = 0.0 or Left.X <= abs (Float'Last / Right.X))
+                   and then (Right.Y = 0.0 or Left.Y <= abs (Float'Last / Right.Y))
+                   and then (Right.Z = 0.0 or Left.Z <= abs (Float'Last / Right.Z))),
           Post => ("*"'Result = Left.X * Right.X + Left.Y * Right.Y
                    + Left.Z * Right.Z);
 
@@ -71,28 +66,16 @@ package Vectors is
                    and then Right.X >= Float'First
                    and then Right.Y >= Float'First
                    and then Right.Z >= Float'First),
-           Post => (if Left.X = Right.X
-                   and then Left.Y = Right.Y
-                   and then Left.Z = Right.Y then
+           Post => (if (abs (Left.X - Right.X) < Epsilon
+                    and then abs (Left.Y - Right.Y) <Epsilon
+                    and then abs (Left.Z - Right.Z) < Epsilon) then
                      "="'Result
                    else
                      "="'Result = False);
 
    --  Determines if both vectors stand orthogonal to each other or not.
    function Are_Orthogonal (Left : Vector; Right : Vector) return Boolean
-     with Pre  => (Left.X <= Float'Last
-                   and then Left.Y <= Float'Last
-                   and then Left.Z <= Float'Last
-                   and then Right.X <= Float'Last
-                   and then Right.Y <= Float'Last
-                   and then Right.Z <= Float'Last
-                   and then Left.X >= Float'First
-                   and then Left.Y >= Float'First
-                   and then Left.Z >= Float'First
-                   and then Right.X >= Float'First
-                   and then Right.Y >= Float'First
-                   and then Right.Z >= Float'First),
-          Post => (if Left * Right = 0.0 then
+     with Post => (if abs(Left * Right) < Epsilon then
                      Are_Orthogonal'Result
                    else
                      Are_Orthogonal'Result = False);

@@ -249,7 +249,7 @@ begin  -- unit main block
     L: constant Vector := (2.0, 1.0, 0.0);
     R: constant Vector := (2.0, 1.0, 0.0);
     Actual: Boolean;
-    Expected: Boolean := true;
+    Expected: Boolean := True;
   begin  -- test case
     begin  -- test part
       Actual := L = R;
@@ -295,7 +295,7 @@ begin  -- unit main block
     L: constant Vector := (2.0, 1.0, 0.0);
     R: constant Vector := (3.0, -6.0, 8.0);
     Actual: Boolean;
-    Expected: Boolean := true;
+    Expected: Boolean := True;
   begin  -- test case
     begin  -- test part
       Actual := Are_Orthogonal(L,R);

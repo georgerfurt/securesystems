@@ -45,19 +45,15 @@ package body Vectors is
    -- Returns False otherwise.
    function "="(Left: Vector; Right: Vector) return Boolean is
    begin
-      if (abs(Left.X - Right.X) < 0.00001
-          and abs(Left.Y - Right.Y) < 0.00001
-          and abs(Left.Z - Right.Y) < 0.00001) then
-         return True;
-      else
-         return false;
-      end if;
+      return (abs (Left.X - Right.X) < Epsilon
+          and then abs (Left.Y - Right.Y) < Epsilon
+          and then abs (Left.Z - Right.Z) < Epsilon);
    end;
 
    -- Determines if both vectors stand orthogonal to each other or not.
    function Are_Orthogonal(Left: Vector; Right: Vector) return Boolean is
    begin
-      if (abs(Left * Right)< 0.0001) then
+      if (abs(Left * Right)< Epsilon) then
          return true;
       else
          return false;

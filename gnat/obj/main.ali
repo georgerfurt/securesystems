@@ -15,7 +15,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		81799ff0 NE OO SU
+U main%b		main.adb		bdb11a26 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
@@ -35,7 +35,7 @@ D a-tiflio.ads		20160516092927 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20160516092928 5ab55268 interfaces%s
 D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
-D main.adb		20161120223159 aa5150fb main%b
+D main.adb		20161121074743 9fbeb488 main%b
 D system.ads		20160516092931 c3282aa7 system%s
 D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
 D s-exctab.ads		20160516092931 54135002 system.exception_table%s
@@ -48,7 +48,7 @@ D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
 D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
-D vectors.ads		20161120084340 f2cf7d7f vectors%s
+D vectors.ads		20161121083526 fbe81cda vectors%s
 X 1 ada.ads
 16K9*Ada 19e8 14|8r6 9r6 18r24 19r24
 X 3 a-flteio.ads
@@ -56,36 +56,40 @@ X 3 a-flteio.ads
 X 9 a-textio.ads
 49K13*Text_IO 471e16 14|9w10 19r28
 73I12*Field{integer}
-166U14*New_Line 14|35s8 43s8 51s8 59s8 67s8 76s8 82s8
-242U14*Put 14|31s8 33s8 39s8 41s8 47s8 49s8 55s8 57s8 63s8 65s8 70s8 72s8
-. 74s8 80s8
-263U14*Put_Line 14|27s8 29s8 37s8 45s8 53s8 61s8 69s8 78s8
+166U14*New_Line 14|38s8 46s8 54s8 62s8 70s8 79s8 85s8
+242U14*Put 14|34s8 36s8 42s8 44s8 50s8 52s8 58s8 60s8 66s8 68s8 73s8 75s8
+. 77s8 83s8
+263U14*Put_Line 14|30s8 32s8 40s8 48s8 56s8 64s8 72s8 81s8
 X 10 a-tiflio.ads
-68U14*Put 14|50s8[3|20] 56s8[3|20] 75s8[3|20] 81s8[3|20]
-69f7 Item{float} 14|56r13[3|20]
-70i7 Fore{9|73I12} 14|50r34[3|20] 56r26[3|20] 75r44[3|20] 81r44[3|20]
-71i7 Aft{9|73I12} 14|50r45[3|20] 56r37[3|20] 75r55[3|20] 81r55[3|20]
-72i7 Exp{9|73I12} 14|50r55[3|20] 56r47[3|20] 75r65[3|20] 81r65[3|20]
+68U14*Put 14|53s8[3|20] 59s8[3|20] 78s8[3|20] 84s8[3|20]
+69f7 Item{float} 14|59r13[3|20]
+70i7 Fore{9|73I12} 14|53r34[3|20] 59r26[3|20] 78r44[3|20] 84r44[3|20]
+71i7 Aft{9|73I12} 14|53r45[3|20] 59r37[3|20] 78r55[3|20] 84r55[3|20]
+72i7 Exp{9|73I12} 14|53r55[3|20] 59r47[3|20] 78r65[3|20] 84r65[3|20]
 X 14 main.adb
-13U11*Main 13b11 85l5 85t9
-18K12 FIO=18:28 50r4 56r4 75r4 81r4
-19K12 TIO=19:28 27r4 29r4 31r4 33r4 35r4 37r4 39r4 41r4 43r4 45r4 47r4 49r4
-. 51r4 53r4 55r4 57r4 59r4 61r4 63r4 65r4 67r4 69r4 70r4 72r4 74r4 76r4 78r4
-. 80r4 82r4
-22r4 Vector_A{27|6R9} 30r9 34r9 38r9 42r9 46r9 50r13 54r9 58r9 62r9 66r24
-. 71r9 75r23
-23r4 Vector_B{27|6R9} 32r9 34r20 40r9 42r20 48r9 50r24 64r9 66r34 73r9 75r33
-. 79r9 81r33
+13U11*Main 13b11 90l5 90t9
+18K12 FIO=18:28 53r4 59r4 78r4 84r4
+19K12 TIO=19:28 30r4 32r4 34r4 36r4 38r4 40r4 42r4 44r4 46r4 48r4 50r4 52r4
+. 54r4 56r4 58r4 60r4 62r4 64r4 66r4 68r4 70r4 72r4 73r4 75r4 77r4 79r4 81r4
+. 83r4 85r4
+22r4 Vector_A{27|6R9} 33r9 37r9 41r9 45r9 49r9 53r13 57r9 61r9 65r9 69r24
+. 74r9 78r23
+23r4 Vector_B{27|6R9} 35r9 37r20 43r9 45r20 51r9 53r24 67r9 69r34 76r9 78r33
+. 82r9 84r33
+24r4 L{27|6R9} 87r26
+25r4 R{27|6R9} 87r28
+26b4 Test{boolean} 87m4
 X 27 vectors.ads
-3K9*Vectors 14|10w6 11r5 27|132e12
-6R9*Vector 14|22r26 23r26 27|10e14
-13V14*"+"{6R9} 14|34s18
-25V14*"-"{6R9} 14|42s18
-37V14*"*"{6R9} 14|58s18
-49V14*"*"{float} 14|50s22
-101V13*Cross_Product{6R9} 14|66s9
-113V13*Distance{float} 14|75s13
-120V13*Distance_To_Origin{float} 14|81s13
-130U14*Put 14|30s4 32s4 34s4 38s4 40s4 42s4 46s4 48s4 54s4 58s4 62s4 64s4
-. 66s4 71s4 73s4 79s4
+3K9*Vectors 14|10w6 11r5 27|115e12
+6R9*Vector 14|22r26 23r26 24r16 25r16 27|10e14
+14V14*"+"{6R9} 14|37s18
+26V14*"-"{6R9} 14|45s18
+38V14*"*"{6R9} 14|61s18
+47V14*"*"{float} 14|53s22
+77V13*Are_Orthogonal{boolean} 14|87s11
+84V13*Cross_Product{6R9} 14|69s9
+96V13*Distance{float} 14|78s13
+103V13*Distance_To_Origin{float} 14|84s13
+113U14*Put 14|33s4 35s4 37s4 41s4 43s4 45s4 49s4 51s4 57s4 61s4 65s4 67s4
+. 69s4 74s4 76s4 82s4
 

@@ -42,7 +42,7 @@ Pass	abs(Actual - Expected) < 0.000001
 Define L: constant Vector := (2.0, 1.0, 0.0);
 	R: constant Vector := (2.0, 1.0, 0.0);
 	Actual: Boolean;
-	Expected: Boolean := true;
+	Expected: Boolean := True;
 Test    Actual := L = R;
 Pass	Actual = Expected
 
@@ -50,7 +50,7 @@ Pass	Actual = Expected
 Define L: constant Vector := (2.0, 1.0, 0.0);
 	R: constant Vector := (3.0, -6.0, 8.0);
 	Actual: Boolean;
-	Expected: Boolean := true;
+	Expected: Boolean := True;
 Test    Actual := Are_Orthogonal(L,R);
 Pass	Actual = Expected
 
