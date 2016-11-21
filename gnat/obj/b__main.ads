@@ -35,7 +35,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#6cad85ec#;
+   u00001 : constant Version_32 := 16#fa4b5951#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#b6df930e#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -283,26 +283,30 @@ package ada_main is
    pragma Export (C, u00123, "system__exn_llfS");
    u00124 : constant Version_32 := 16#75d08c2c#;
    pragma Export (C, u00124, "system__fat_fltS");
-   u00125 : constant Version_32 := 16#be77c459#;
-   pragma Export (C, u00125, "vectorsB");
-   u00126 : constant Version_32 := 16#de0d46ee#;
-   pragma Export (C, u00126, "vectorsS");
-   u00127 : constant Version_32 := 16#84ad4a42#;
-   pragma Export (C, u00127, "ada__numericsS");
-   u00128 : constant Version_32 := 16#3e0cf54d#;
-   pragma Export (C, u00128, "ada__numerics__auxB");
-   u00129 : constant Version_32 := 16#9f6e24ed#;
-   pragma Export (C, u00129, "ada__numerics__auxS");
-   u00130 : constant Version_32 := 16#221eebf6#;
-   pragma Export (C, u00130, "system__machine_codeS");
-   u00131 : constant Version_32 := 16#52f1910f#;
-   pragma Export (C, u00131, "system__assertionsB");
-   u00132 : constant Version_32 := 16#e028bcac#;
-   pragma Export (C, u00132, "system__assertionsS");
-   u00133 : constant Version_32 := 16#ee101ba4#;
-   pragma Export (C, u00133, "system__memoryB");
-   u00134 : constant Version_32 := 16#74d8f60c#;
-   pragma Export (C, u00134, "system__memoryS");
+   u00125 : constant Version_32 := 16#c4c11fa3#;
+   pragma Export (C, u00125, "electionsB");
+   u00126 : constant Version_32 := 16#d89a65ee#;
+   pragma Export (C, u00126, "electionsS");
+   u00127 : constant Version_32 := 16#52f1910f#;
+   pragma Export (C, u00127, "system__assertionsB");
+   u00128 : constant Version_32 := 16#e028bcac#;
+   pragma Export (C, u00128, "system__assertionsS");
+   u00129 : constant Version_32 := 16#be77c459#;
+   pragma Export (C, u00129, "vectorsB");
+   u00130 : constant Version_32 := 16#de0d46ee#;
+   pragma Export (C, u00130, "vectorsS");
+   u00131 : constant Version_32 := 16#84ad4a42#;
+   pragma Export (C, u00131, "ada__numericsS");
+   u00132 : constant Version_32 := 16#3e0cf54d#;
+   pragma Export (C, u00132, "ada__numerics__auxB");
+   u00133 : constant Version_32 := 16#9f6e24ed#;
+   pragma Export (C, u00133, "ada__numerics__auxS");
+   u00134 : constant Version_32 := 16#221eebf6#;
+   pragma Export (C, u00134, "system__machine_codeS");
+   u00135 : constant Version_32 := 16#ee101ba4#;
+   pragma Export (C, u00135, "system__memoryB");
+   u00136 : constant Version_32 := 16#74d8f60c#;
+   pragma Export (C, u00136, "system__memoryS");
    --  BEGIN ELABORATION ORDER
    --  ada%s
    --  ada.characters%s
@@ -435,6 +439,8 @@ package ada_main is
    --  ada.text_io.generic_aux%s
    --  ada.text_io.generic_aux%b
    --  ada.text_io.float_aux%b
+   --  elections%s
+   --  elections%b
    --  vectors%s
    --  vectors%b
    --  main%b

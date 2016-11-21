@@ -9,6 +9,7 @@ with Ada.Float_Text_IO,
      Ada.Text_IO,
      Vectors;
 use Vectors;
+with Elections; use Elections;
 
 procedure Main is
 
@@ -90,5 +91,7 @@ begin
    else
       TIO.Put_Line ("orthogonal fails");
    end if;
+
+   Initialize (5);
 
 end Main;

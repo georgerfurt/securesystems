@@ -11,7 +11,7 @@ package body ada_main is
    E013 : Short_Integer; pragma Import (Ada, E013, "system__soft_links_E");
    E023 : Short_Integer; pragma Import (Ada, E023, "system__exception_table_E");
    E089 : Short_Integer; pragma Import (Ada, E089, "ada__io_exceptions_E");
-   E127 : Short_Integer; pragma Import (Ada, E127, "ada__numerics_E");
+   E131 : Short_Integer; pragma Import (Ada, E131, "ada__numerics_E");
    E046 : Short_Integer; pragma Import (Ada, E046, "ada__strings_E");
    E048 : Short_Integer; pragma Import (Ada, E048, "ada__strings__maps_E");
    E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings__maps__constants_E");
@@ -23,13 +23,14 @@ package body ada_main is
    E099 : Short_Integer; pragma Import (Ada, E099, "system__file_io_E");
    E102 : Short_Integer; pragma Import (Ada, E102, "system__finalization_root_E");
    E100 : Short_Integer; pragma Import (Ada, E100, "ada__finalization_E");
-   E132 : Short_Integer; pragma Import (Ada, E132, "system__assertions_E");
+   E128 : Short_Integer; pragma Import (Ada, E128, "system__assertions_E");
    E061 : Short_Integer; pragma Import (Ada, E061, "system__object_reader_E");
    E041 : Short_Integer; pragma Import (Ada, E041, "system__dwarf_lines_E");
    E017 : Short_Integer; pragma Import (Ada, E017, "system__secondary_stack_E");
    E036 : Short_Integer; pragma Import (Ada, E036, "system__traceback__symbolic_E");
    E086 : Short_Integer; pragma Import (Ada, E086, "ada__text_io_E");
-   E126 : Short_Integer; pragma Import (Ada, E126, "vectors_E");
+   E126 : Short_Integer; pragma Import (Ada, E126, "elections_E");
+   E130 : Short_Integer; pragma Import (Ada, E130, "vectors_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -149,7 +150,7 @@ package body ada_main is
       Ada.Io_Exceptions'Elab_Spec;
       E089 := E089 + 1;
       Ada.Numerics'Elab_Spec;
-      E127 := E127 + 1;
+      E131 := E131 + 1;
       Ada.Strings'Elab_Spec;
       E046 := E046 + 1;
       Ada.Strings.Maps'Elab_Spec;
@@ -168,7 +169,7 @@ package body ada_main is
       Ada.Finalization'Elab_Spec;
       E100 := E100 + 1;
       System.Assertions'Elab_Spec;
-      E132 := E132 + 1;
+      E128 := E128 + 1;
       System.Object_Reader'Elab_Spec;
       System.Dwarf_Lines'Elab_Spec;
       System.File_Io'Elab_Body;
@@ -191,6 +192,7 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E086 := E086 + 1;
       E126 := E126 + 1;
+      E130 := E130 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -226,6 +228,7 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
+   --   C:\Workspaces\Git\securesystems\gnat\obj\elections.o
    --   C:\Workspaces\Git\securesystems\gnat\obj\vectors.o
    --   C:\Workspaces\Git\securesystems\gnat\obj\main.o
    --   -LC:\Workspaces\Git\securesystems\gnat\obj\
